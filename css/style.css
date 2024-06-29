@@ -146,6 +146,17 @@ main {
   transition: all 1s ease-in-out;
 }
 
+.play-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 35px;
+  transform: translateY(-50%);
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+}
+
 .btn-hex,
 .btn-hex img {
   width: 750px;

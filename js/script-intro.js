@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const startButton = document.getElementById('startNarration');
+  const playWrapper = document.querySelector('.play-wrapper');
+  const playButton = document.querySelector('.pause-play-btn');
   let btnIntro = document.querySelector('.button-intro');
   let btnHex = document.querySelector('.btn-hex');
   const phrases = document.querySelectorAll('.phrase');
@@ -65,9 +67,18 @@ document.addEventListener('DOMContentLoaded', function () {
   highlightAndPlayPhrase();
 
   startButton.addEventListener('click', function () {
-    highlightAndPlayPhrase(); // Start with the first phrase
+    playWrapper.style.opacity = '1';
+    playWrapper.style.pointerEvents = 'all';
+    playWrapper.style.cursor = 'pointer';
+    playButton.style.cursor = 'pointer';
     btnIntro.style.backgroundColor = 'transparent';
     btnIntro.style.display = 'none';
     startButton.style.display = 'none';
+  });
+
+  playButton.addEventListener('click', function () {
+    console.log('play button clicked');
+    highlightAndPlayPhrase();
+    playButton.style.display = 'none';
   });
 });
