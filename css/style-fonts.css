@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'mr-darcy-rg';
+  src: url('../assets/fonts/mr-darcy/mr-darcy-regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mr-darcy-bold';
+  src: url('../assets/fonts/mr-darcy/mr-darcy-bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'corporate-condensed-a-light';
+  src: url('../assets/fonts/corporate-a-condensed/corporate-a-condensed-light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'corporate-condensed-a-regular';
+  src: url('../assets/fonts/corporate-a-condensed/corporate-a-condensed-regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'corporate-condensed-a-bold';
+  src: url('../assets/fonts/corporate-a-condensed/corporate-a-condensed-bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.head {
+  font-family: 'mr-darcy-rg';
+  margin-bottom: 1rem;
+}
+
+.title-head {
+  font-size: var(--desktop-fs-title-head);
+}
+
+.title-subhead {
+  font-size: var(--desktop-fs-title-subhead);
+}
+
+.section-head {
+  font-size: var(--desktop-fs-section-head);
+}
+
+.body-head {
+  font-size: var(--desktop-fs-body-head);
+}
+
+.body-subhead {
+  font-size: var(--desktop-fs-body-subhead);
+}
+
+.body-lg {
+  font-size: var(--desktop-fs-body-lg);
+}
+
+.body {
+  font-size: var(--desktop-fs-body);
+}
+
+.body-md {
+  font-size: var(--desktop-fs-body-md);
+}
+
+.body-sm {
+  font-size: var(--desktop-fs-body-sm);
+}
+
+.darcy-rg {
+  font-family: 'mr-darcy-rg';
+}
+
+.darcy-bold {
+  font-family: 'mr-darcy-bold';
+}
+
+.cca-light {
+  font-family: 'corporate-condensed-a-light';
+}
+
+.cca-regular {
+  font-family: 'corporate-condensed-a-regular';
+}
+
+.cca-bold {
+  font-family: 'corporate-condensed-a-bold';
+}

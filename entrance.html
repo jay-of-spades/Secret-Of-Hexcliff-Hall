@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style-utilities.css">
+  <link rel="stylesheet" href="css/style-fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-entrance.css">
+  <title>Hexcliff's First Room - The Entrance Room</title>
+</head>
+
+<body>
+
+  <div class="button-intro">
+    <div class="btn-wrap button-intro-left"><span>See Instruction</span>
+      <div class="c-pntr d-block centered-box"><img class="open-instruction" src="assets/img/icons/instruction.png"
+          alt="home icon">
+      </div>
+    </div>
+    <div class="button-intro-mid btn-wrap">
+      <span>or</span>
+    </div>
+    <div class="btn-wrap button-intro-right">
+      <span>Venture Forth</span>
+      <img class="exit-opening c-pntr" src="assets/img/icons/right-chevron.svg" alt="right-chevron">
+    </div>
+  </div>
+
+  <div class="button-container">
+    <div class="button-wrapper">
+      <a href="index.html" class="d-block c-pntr navlinks transition"><img src="assets/img/icons/home.svg"
+          alt="home icon"><span class="navlinks-label cca-bold transition">back to home</span></a>
+      <div class="navlinks"><img class="showInstruction d-block c-pntr " src="assets/img/icons/instruction.png"
+          alt="instruction icon"><span class="navlinks-label cca-bold transition">instruction</span></div>
+      <div class="navlinks"><img class="d-block clue-icon c-pntr" src="assets/img/icons/clue.svg"
+          alt="right-chevron icon" onclick="showEntranceRiddle()"><span
+          class="navlinks-label cca-bold transition">clue</span>
+      </div>
+    </div>
+    <div class="button-wrapper">
+      <a href="greenhouse.html" class="d-block navlinks"><img class="next-icon c-pntr"
+          src="assets/img/icons/right-chevron.svg" alt="right-chevron icon"> <span
+          class="navlinks-label cca-bold transition">greenhouse</span></a>
+    </div>
+  </div>
+
+
+  <div class="showClue">
+    <div class="clue-wrapper">
+      <div class="clue-text">
+        <p class="phrase">In the hall of time, where echoes sway,</p>
+        <p class="phrase">Four stages of life will light your way.</p>
+
+        <br><br>
+        <p class="phrase">Begin where dawn breaks in a cry,</p>
+        <p class="phrase">In infancy's grasp, under the sky.</p>
+        <p class="phrase">Tiny as a <span class="wordClue darcy-bold">seed</span> yet holds life's start,</p>
+        <p class="phrase">A journey begins, a new heart.</p>
+
+        <br><br>
+        <p class="phrase">Next to the fields of youth we leap,</p>
+        <p class="phrase">Where dreams are sown and secrets keep.</p>
+        <p class="phrase">In youthful stride, swift and bold,</p>
+        <p class="phrase"><span class="wordClue darcy-bold">Antlers</span> on high through stories untold.</p>
+
+        <br><br>
+        <p class="phrase">Then to the strength of <span class="wordClue darcy-bold">roaring</span> might,</p>
+        <p class="phrase">In maturity's arms, holding the light.</p>
+        <p class="phrase">Regal and fierce, guarding the night,</p>
+        <p class="phrase">A symbol of power in the moon's bright light.</p>
+
+        <br><br>
+        <p class="phrase">End where the echoes turn to gold,</p>
+        <p class="phrase">In legacy's grasp, stories untold.</p>
+        <p class="phrase">Drifting gently, <span class="wordClue darcy-bold">light as air</span>,</p>
+        <p class="phrase">Wisdom's touch, soft and fair.</p>
+      </div>
+      <div class="back-button">
+        <button class="btn btn-alt d-block centered-box" onclick="closeEntranceRiddle()">Return</button>
+      </div>
+    </div>
+    <audio id="narrationAudio" hidden></audio>
+  </div>
+
+  <div id="instructionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="instructionText">Welcome to Hexcliff Hall's Entrance Room</p>
+      <img id="instructionImage" src="assets/img/hexcliffHall.jpg" alt="Instruction Image">
+      <audio id="instructionAudio" hidden>
+        <source src="assets/sound/05 - instructions.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="play-btn">
+        <img class="pause-play-btn d-block centered-box c-pntr" src="assets/img/icons/pause-play.png"
+          alt="pause-play icon">
+        <img class="exit-btn d-block centered-box c-pntr" src="assets/img/icons/close.png" alt="return">
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <div class="game-wrapper bg-img-cover">
+      <div class="game-item chair c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item candle3  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item painting c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item clock  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase3  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase4 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item candle1  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item candle2  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item box1 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item box2 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item books1 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase1 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase2  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase5  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item table1 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase6 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase7 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase8 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase9  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item books2 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item candle4 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase10  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item vase11  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item table2 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item table3  c-pntr blink rounded-corner-sm"></div>
+      <div class="quest-item-wrapper">
+        <div class="quest-item c-pntr blink bg-img-cover" draggable="false">
+        </div>
+        <div class="quest-item c-pntr blink bg-img-cover" draggable="false">
+        </div>
+        <div class="quest-item c-pntr blink bg-img-cover" draggable="false">
+        </div>
+        <div class="quest-item c-pntr blink bg-img-cover" draggable="false">
+        </div>
+      </div>
+      <div class="puzzle-wrapper">
+        <div class="puzzle-frame ">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/script-entrance.js"></script>
+</body>
+
+</html>

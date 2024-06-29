@@ -1,0 +1,166 @@
+.game-wrapper {
+  background-image: url(../assets/img/entranceHall/entranceHall.jpg);
+}
+
+#instructionModal {
+  display: none;
+}
+
+.chair {
+  width: 120px;
+  height: 230px;
+  top: 69%;
+  right: 12.5%;
+}
+.box1 {
+  width: 50px;
+  height: 64px;
+  top: 67%;
+  right: 0.75%;
+}
+.box2 {
+  width: 20px;
+  height: 67px;
+  top: 65.75%;
+  right: 4.95%;
+}
+
+.books1 {
+  width: 55px;
+  height: 64px;
+  top: 67%;
+  right: 6%;
+}
+.books2 {
+  width: 65px;
+  height: 50px;
+  top: 67.5%;
+  left: 5.25%;
+}
+.vase1 {
+  width: 20px;
+  height: 55px;
+  top: 66.85%;
+  right: 10.075%;
+}
+.vase2 {
+  width: 20px;
+  height: 40px;
+  top: 69%;
+  right: 11.25%;
+}
+.vase3 {
+  width: 20px;
+  height: 35px;
+  top: 71.5%;
+  right: 25.5%;
+}
+.vase4 {
+  width: 18px;
+  height: 30px;
+  top: 72.5%;
+  right: 24.5%;
+}
+
+.vase5 {
+  width: 30px;
+  height: 30px;
+  top: 72.5%;
+  left: 25.5%;
+}
+.vase6 {
+  width: 25px;
+  height: 60px;
+  bottom: 4%;
+  left: 17.25%;
+}
+.vase7 {
+  width: 25px;
+  height: 60px;
+  bottom: 3.75%;
+  left: 15.85%;
+}
+.vase8 {
+  width: 25px;
+  height: 40px;
+  bottom: 3%;
+  left: 14%;
+}
+
+.vase9 {
+  width: 45px;
+  height: 50px;
+  top: 67.5%;
+  left: 10.5%;
+}
+.vase10 {
+  width: 35px;
+  height: 85px;
+  top: 66%;
+  left: 1.85%;
+}
+.vase11 {
+  width: 23px;
+  height: 85px;
+  top: 66%;
+  left: 0;
+}
+.table1 {
+  width: 110px;
+  height: 130px;
+  top: 75.5%;
+  left: 22%;
+}
+.table2 {
+  width: 130px;
+  height: 200px;
+  top: 73.5%;
+  left: 5.95%;
+}
+.table3 {
+  width: 90px;
+  height: 185px;
+  top: 76.5%;
+  left: 0%;
+}
+.painting {
+  width: 90px;
+  height: 120px;
+  top: 61.5%;
+  right: 18.5%;
+}
+.clock {
+  width: 50px;
+  height: 50px;
+  top: 51.85%;
+  right: 19.35%;
+}
+
+.candle1 {
+  width: 15px;
+  height: 25px;
+  top: 73%;
+  right: 23.1%;
+}
+.candle2 {
+  width: 15px;
+  height: 20px;
+  top: 73.75%;
+  right: 20.65%;
+}
+.candle3 {
+  width: 60px;
+  height: 170px;
+  top: 40%;
+  right: 14.75%;
+}
+
+.candle4 {
+  width: 52px;
+  height: 220px;
+  top: 44.5%;
+  left: 16%;
+}
+.frame {
+  background-image: url(../assets/img/entranceHall/frame.png);
+}

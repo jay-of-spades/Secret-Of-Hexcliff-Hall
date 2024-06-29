@@ -1,0 +1,321 @@
+:root {
+  --light-color: #fefefc;
+  --light-color-15: #fefefc26;
+  --light-color-25: #fefefc40;
+  --light-color-50: #fefefc80;
+  --light-color-75: #fefefcbe;
+  --dark-color: #020403;
+  --dark-color-15: #02040326;
+  --dark-color-25: #02040340;
+  --dark-color-50: #02040380;
+  --dark-color-75: #020403be;
+  --dark-color-90: #020403e6;
+  --secondary-color: #a03c59;
+  --secondary-color-15: #a03c5926;
+  --secondary-color-25: #a03c5940;
+  --secondary-color-50: #a03c5980;
+  --secondary-color-75: #a03c59be;
+  --alt-color: #8bca71;
+  --alt-color-15: #8bca7126;
+  --alt-color-25: #8bca7140;
+  --alt-color-50: #8bca7180;
+  --alt-color-75: #8bca71be;
+  --accent-color: #a2659c;
+  --accent-color-15: #a2659c26;
+  --accent-color-25: #a2659c40;
+  --accent-color-50: #a2659c80;
+  --accent-color-75: #a2659cbe;
+
+  --body-font-weight: 300;
+  --strong-font-weight: 700;
+  --head-font-weight: 900;
+
+  --body-font-style: normal;
+  --body-attention-font-style: italic;
+
+  --mobile-fs-title-head: 90px;
+  --mobile-fs-title-head-sm: 50px;
+  --mobile-fs-title-subhead: 30px;
+  --mobile-fs-section-head: 25px;
+  --mobile-fs-body-head: 18px;
+  --mobile-fs-body-subhead: 16px;
+  --mobile-fs-body-lg: 14px;
+  --mobile-fs-body: 12px;
+  --mobile-fs-body-sm: 10px;
+
+  --desktop-fs-title-head: 100px;
+  --desktop-fs-title-subhead: 50px;
+  --desktop-fs-section-head: 40px;
+  --desktop-fs-body-head: 30px;
+  --desktop-fs-body-subhead: 24px;
+  --desktop-fs-body-lg: 18px;
+  --desktop-fs-body: 16px;
+  --desktop-fs-body-md: 14px;
+  --desktop-fs-body-sm: 12px;
+
+  --mobile-white-space-xs: 5px;
+  --mobile-white-space-sm: 10px;
+  --mobile-white-space-md: 25px;
+  --mobile-white-space-lg: 50px;
+  --mobile-white-space-xl: 75px;
+  --mobile-white-space-xxl: 120px;
+
+  --desktop-white-space-xs: 10px;
+  --desktop-white-space-sm: 20px;
+  --desktop-white-space-md: 50px;
+  --desktop-white-space-lg: 70px;
+  --desktop-white-space-xl: 100px;
+  --desktop-white-space-xxl: 150px;
+}
+
+.text-spacing {
+  letter-spacing: 12%;
+  line-height: 150%;
+}
+
+.text-centering {
+  text-align: center;
+}
+
+.dark-text {
+  color: var(--dark-color);
+}
+
+.light-text {
+  color: var(--light-color);
+}
+
+.accent-text {
+  color: var(--accent-color);
+}
+.transform-upper {
+  text-transform: uppercase;
+}
+
+.transform-lower {
+  text-transform: lowercase;
+}
+
+.transform-capitalize {
+  text-transform: capitalize;
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.bg-img-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  display: table-cell;
+  vertical-align: middle;
+  border: none;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  height: 40px;
+  padding: 0 var(--mobile-white-space-md);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: var(--strong-font-weight);
+  font-size: var(--mobile-fs-body-subhead);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+}
+
+.btn-alt {
+  border: 1px solid var(--light-color);
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+.btn-alt:hover {
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.btn-alt:active {
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+.btn-anchor {
+  width: 200px;
+  padding: var(--mobile-white-space-sm) 0;
+  line-height: 17.5px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+}
+
+.clue-icon,
+.next-icon {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.navlinks {
+  position: relative;
+}
+
+.navlinks-label {
+  position: absolute;
+  top: -20px;
+  right: -50px;
+  opacity: 0;
+  letter-spacing: 12%;
+  text-transform: uppercase;
+  pointer-events: none;
+  background-color: rgba(255, 255, 0, 0.346);
+  color: var(--light-color);
+  padding: var(--mobile-white-space-xs) var(--mobile-white-space-sm);
+  border-radius: 2px;
+}
+
+.navlinks:hover .navlinks-label {
+  opacity: 1;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex-basic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-box {
+  margin: 0 auto;
+}
+
+.c-pntr {
+  cursor: pointer;
+}
+
+.rounded-corner-xs {
+  border-radius: 5px;
+}
+
+.rounded-corner-sm {
+  border-radius: 10px;
+}
+
+.rounded-corner-md {
+  border-radius: 15px;
+}
+
+.rounded-corner-lg {
+  border-radius: 20px;
+}
+
+.rounded-corner-xl {
+  border-radius: 25px;
+}
+
+.rounded-corner-xxl {
+  border-radius: 30px;
+}
+
+.rounded-corner-circle {
+  border-radius: 50%;
+}
+
+.geelbox {
+  background-color: rgba(255, 255, 0, 0.346);
+}
+
+.roodbox {
+  background-color: rgba(255, 0, 0, 0.346);
+}
+
+.blauwbox {
+  background-color: rgba(0, 0, 255, 0.346);
+}
+
+.groenbox {
+  filter: drop-shadow(-10px 0px 5px rgba(0, 255, 0, 0.9))
+    drop-shadow(10px 0px 5px rgba(0, 255, 0, 0.9));
+}
+
+.blink:hover {
+  animation: blinker 1.25s linear infinite;
+}
+
+.blink2 {
+  animation: blinker 1.25s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.growShrink {
+  animation: growShrink 2.25s linear infinite;
+}
+
+@keyframes growShrink {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.test-text {
+  font-family: 'mr-darcy-bold';
+  font-size: 90px;
+  color: var(--light-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-color);
+}
+
+.fumesBg {
+  background-image: url(../assets/img/greenhouse/rottingFumes.gif);
+  opacity: 0.75;
+}
+
+.dimmedFrame {
+  filter: grayscale(100%) brightness(0.35);
+  pointer-events: none;
+}
+
+.sepiaBox {
+  filter: sepia(100%) brightness(0.75);
+}

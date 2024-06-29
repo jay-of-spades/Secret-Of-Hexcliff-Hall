@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style-utilities.css">
+  <link rel="stylesheet" href="css/style-fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-study.css">
+  <title>Hexcliff's Third Room - The Study</title>
+</head>
+
+<body>
+  <div class="button-intro">
+    <div class="btn-wrap button-intro-left"><span>See Instruction</span>
+      <div class="c-pntr d-block centered-box"><img class="open-instruction" src="assets/img/icons/instruction.png"
+          alt="home icon">
+      </div>
+    </div>
+    <div class="button-intro-mid btn-wrap">
+      <span>or</span>
+    </div>
+    <div class="btn-wrap button-intro-right">
+      <span>Venture Forth</span>
+      <img class="exit-opening c-pntr" src="assets/img/icons/right-chevron.svg" alt="right-chevron">
+    </div>
+  </div>
+
+  <div class="mode-container d-none">
+    <div class="mode-wrapper">
+      <img id="easy-mode" src="assets/img/icons/easy.png" alt="easy icon">
+      <img id="hard-mode" src="assets/img/icons/hard.png" alt="easy icon">
+    </div>
+  </div>
+
+  <div class="button-container">
+    <div class="button-wrapper">
+      <a href="index.html" class="d-block c-pntr navlinks transition"><img src="assets/img/icons/home.svg"
+          alt="home icon"><span class="navlinks-label cca-bold transition">back to home</span></a>
+      <a href="greenhouse.html" class="d-block navlinks transition"><img class="prev-icon c-pntr transition"
+          src="assets/img/icons/left-chevron.svg" alt="left-chevron icon"><span
+          class="navlinks-label cca-bold transition">greenhouse</span></a>
+      <div class="navlinks"><img class="showInstruction d-block c-pntr " src="assets/img/icons/instruction.png"
+          alt="instruction icon"><span class="navlinks-label cca-bold transition">instruction</span></div>
+    </div>
+    <div class="button-wrapper">
+      <a href="study.html" class="d-block navlinks"><img class="next-icon c-pntr"
+          src="assets/img/icons/right-chevron.svg" alt="right-chevron icon"> <span
+          class="navlinks-label cca-bold">study</span></a>
+    </div>
+  </div>
+
+  <div id="instructionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="instructionText">Welcome to Hexcliff Hall's Study</p>
+      <img id="instructionImage" src="assets/img/study/instructions/00instruction.jpg"
+        alt="An illustration depicting the blueprint of a mansion with footsteps traced from the entrance to the greenhouse and finally to the study">
+      <audio id="instructionAudio" hidden>
+        <source src="assets/sound/07Study/instruction.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="play-btn">
+        <img class="pause-play-btn d-block centered-box c-pntr" src="assets/img/icons/pause-play.png"
+          alt="pause-play icon">
+        <img class="exit-btn d-block centered-box c-pntr" src="assets/img/icons/close.png" alt="return">
+      </div>
+    </div>
+  </div>
+
+  <div class="lose-and-laugh">
+    <div class="lose-img bg-img-cover"></div>
+  </div>
+  <div id="container">
+    <div class="game-wrapper bg-img-cover">
+      <div class="game-item  papers1 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  cup1 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  cup2 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  paper2 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  paper3 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item vase1 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  paper4 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  drawer1 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item drawer2 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book1 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book2 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  book3 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book4 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book5 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book6 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book7 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book8 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book9 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book10 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book11 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item chair1 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item mirror1 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  mirror2 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item buoquet c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item globe c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item bottle c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  wine-closet c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item transistor-radio c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  chair2 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book12 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  book13 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book14 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book15 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item magazine-pile1 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item magazine-pile2 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item  chair3 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book16 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book17 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book18 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="game-item book19 c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <div class="jukebox c-pntr rounded-corner-sm bg-img-cover"></div>
+
+      <div class="songs-choices">
+        <div class="songs-choices-wrapper">
+          <div class="keep song-choice c-pntr bg-img-cover"></div>
+          <div class="pass song-choice c-pntr bg-img-cover"></div>
+          <div class="toss song-choice c-pntr bg-img-cover"></div>
+        </div>
+      </div>
+
+      <div id="feedback">
+        <div class="feedback-wrapper">
+          <div class="feedback-item-wrapper">
+            <h4 class="cca-bold text-spacing text-centering light-text body-lg">You have found</h4>
+            <h2 class="feedback-line mr-darcy-bold accent-text body-subhead">Rain pattered gently against
+              the roof.</h2>
+          </div>
+          <div class="feedback-item-wrapper">
+            <h4 class="cca-bold light-text text-centering body-lg">From Page</h4>
+            <h2 class="feedback-line-page text-centering mr-darcy-bold accent-text body-subhead">87</h2>
+          </div>
+        </div>
+      </div>
+      <div class="quest-item-wrapper">
+        <div class="quest-items">
+          <div class="quest-item sepiaBox c-pntr bg-img-cover d-none" id="quest-item-1" draggable="true">
+            <span class="quest-item-span text-centering "></span>
+          </div>
+          <div class="quest-item sepiaBox c-pntr bg-img-cover d-none" id="quest-item-2" draggable="true">
+            <span class="quest-item-span text-centering"></span>
+          </div>
+          <div class="quest-item sepiaBox c-pntr bg-img-cover d-none" id="quest-item-3" draggable="true">
+            <span class="quest-item-span text-centering"></span>
+          </div>
+        </div>
+      </div>
+      <div class="puzzle-wrapper">
+        <div class="puzzle-frame bg-img-cover ">
+          <h2 class="frame bg-img-cover mr-darcy-bold light-text text-centering">1</h2>
+          <div id="drop-target-1" class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <h2 class="frame bg-img-cover mr-darcy-bold light-text text-centering">2</h2>
+          <div id="drop-target-2" class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <h2 class="frame  bg-img-cover mr-darcy-bold light-text text-centering">3</h2>
+          <div id="drop-target-3" class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame-btn bg-img-cover">
+          <div class="play-chosen-song">
+            <img id="play-pillar-song" class="pause-play-btn d-block centered-box c-pntr"
+              src="assets/img/icons/pause-play.png" alt="pause-play icon">
+          </div>
+        </div>
+      </div>
+      <div id="farewell" class="text-spacing text-centering darcy-rg light-text section-head">
+        <div class="farewell-wrapper">
+          <audio id="farewellAudio" hidden>
+            <source src="assets/sound/07Study/farewell.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <p>
+            <span class="phrase highlight">As the music of the jukebox fades, the pale, purplish mist that followed you
+              in the
+              study
+              took the shape of a dignified and gnarly figure.</span>
+            <span class="phrase">No doubt remains in you. </span>
+            <span class="phrase">This is the fierce guardian of Hexcliff Hall, the mansion's
+              very
+              secret.</span>
+            <span class="phrase">Before you could utter a word, she stilled you with her raised hand.</span>
+          </p>
+          <p>
+            <span class="phrase">"You have triumphed, oh valiant one, your victory stands unrivaled and supreme.</span>
+            <span class="phrase">Pray, forgive the exuberance of my offspring, Hawthorne.
+
+            </span>
+            <span class="phrase"> We of Wardenweed lineage are
+              effervescent in our youth, transforming to sentinels of safeguard as the seasons of life advance.</span>
+            <span class="phrase">The gauntlets you braved, the tapestry of trials—none were trivial.
+
+            </span>
+            <span class="phrase">They were but
+              reflections of our nature, not of malice, but of our otherworldly origin.</span>
+            <span class="phrase">Our essence, our world, is not quite alien to yours, yet steeped in an ethereal
+              magic.</span>
+            <span class="phrase">If not for our ill fortune, returning to this blissful place would be our
+              choice."</span>
+          </p>
+          <p>
+            <span class="phrase">"Forgive us, forgive me and mine, and those who will tread the paths we have woven, for
+              our feet are planted in realms apart.</span>
+            <span class="phrase">I speak too often in plural, yet my tenure wanes.
+            </span>
+            <span class="phrase">'Tis Hawthorne who shall be your
+              shield, warding off ailment and the wear of time.</span>
+            <span class="phrase">As with all beings of flesh and matter of this world, we too are bound to the silent
+              lull
+              of death's inevitable claim.</span>
+            <span class="phrase">Our passing is twofold, tied to your world and ours alike. </span>
+            <span class="phrase">I lingered, as duty bade me
+              wait, for without the human heir, our progeny would wither, and our lineage would falter."</span>
+          </p>
+          <p>
+            <span class="phrase">Your wisdom and bravery have calmed my restless spirit. Know this to be my solemn
+              promise.</span>
+            <span class="phrase">When your final hour draws nigh, fear not, for it shall be like crossing the threshold
+              of
+              the next room.</span>
+            <span class="phrase">Under Wardenweed's aegis, you shall neither ail nor crumble under the yoke of
+              age.</span>
+            <span class="phrase">Prosperity shall grace these halls at your touch, so long as the bond with my scion
+              endures.</span>
+            <span class="phrase">When the twilight of your days whispers, know that a new seedling will sprout from
+              Hawthorne.</span>
+            <span class="phrase">Tend to it, as Matthew tended to mine.
+            </span>
+            <span class="phrase"> Nourish it with the human quintessence that is
+              uniquely yours.</span>
+            <span class="phrase">Music or not, let it be the distillation of your soul."</span>
+          </p>
+          <p>
+            <span class="phrase">Contemplate the lineage that will follow in your wake.
+            </span>
+            <span class="phrase"> Draft your lists, refine them,
+              draw near to your chosen, and weigh their merit.</span>
+            <span class="phrase">Then, entrust them to the hands of Destiny. </span>
+            <span class="phrase">Farewell, champion of our tale.</span>
+            <span class="phrase">May your
+              days
+              be bountiful and your twilight resonate with sweetness."</span>
+          </p>
+          <p>
+            <span class="phrase">Before you, the Wardenweed collapsed into a heap of purplish ash. </span>
+            <span class="phrase">The vault swings
+              open, and from its heart, a treeling springs forth—lively and swift, weaving through its own vulnerable
+              roots.</span>
+            <span class="phrase">It reaches out with slender branches towards your hand, beckoning, a silent entreaty
+              for comfort in the face of its loss.
+            </span>
+            <span class="phrase">On its bark-etched face, a droplet that could be a tear glistens, but before you can
+              step
+              closer to confirm, it pulls you towards the jukebox.</span>
+            <span class="phrase">In that instant, understanding dawns upon you—words are unnecessary.</span>
+            <span class="phrase">You press the button, choosing the happiest song you can find.</span>
+            <span class="phrase">You sit on the ancient armchair next to the jukebox. Hawthorne jumps to your
+              lap.</span>
+            <span class="phrase">It wasn't long till you hear the rustling of leaves outside and within, sounding closer
+              like a satisfied snore.</span>
+            <span class="phrase">An odd pair you two shall make. But from here on, alone shall neither of you be.</span>
+          </p>
+
+
+        </div>
+      </div>
+      <div class="hexcliff-logo">
+        <a href="index.html" class="btn-anchor btn-hex d-block"><img src="assets/img/Hexcliff Logo.svg"
+            alt="hexcliff-logo"></a>
+      </div>
+      <script src="js/script-study.js"></script>
+</body>
+
+</html>

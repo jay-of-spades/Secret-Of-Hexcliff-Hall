@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020403;
+}
+#container {
+  width: 90vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-color-90);
+}
+
+.modal-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  position: relative;
+}
+
+.button-intro {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+.button-intro span {
+  font-size: var(--desktop-fs-body-subhead);
+  color: var(--light-color);
+  margin: var(--desktop-white-space-md) 0 var(--desktop-white-space-lg);
+}
+
+.button-intro img {
+  width: 150px;
+  height: 150px;
+  border: none;
+}
+
+.button-intro-mid span {
+  font-size: var(--desktop-fs-title-head);
+  color: var(--light-color);
+}
+.btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  margin-top: 150px;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button-wrapper > * {
+  margin-top: var(--desktop-white-space-md);
+}
+
+.button-wrapper:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+.button-wrapper:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+#narration-keyfob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.narration-wrapper {
+  width: 80%;
+  margin-top: var(--desktop-white-space-xl);
+}
+.phrase {
+  color: #fefefc;
+  opacity: 0.25;
+  transition: opacity 1s, background-color 1s;
+}
+
+.highlight {
+  opacity: 1;
+  background-color: var(--accent-color-75);
+}
+
+.hexcliff-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: var(--desktop-white-space-sm);
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  background: var(--dark-color-90);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 9;
+  transition: all 1s ease-in-out;
+}
+
+.btn-hex,
+.btn-hex img {
+  width: 750px;
+  height: 750px;
+}
+
+.btn-hex {
+  pointer-events: none;
+}
+#instructionImage {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Game Proper */
+.game-wrapper {
+  position: relative;
+  width: calc(960px * 1.5);
+  height: calc(520px * 1.5);
+}
+.game-item {
+  position: absolute;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+.showClue {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-color-90);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.clue-text {
+  margin: var(--desktop-white-space-md);
+}
+.clue-text p.phrase {
+  font-size: var(--desktop-fs-body-subhead);
+  color: var(--light-color);
+  letter-spacing: 7%;
+  line-height: 1.25;
+  text-align: center;
+}
+.clue-text span.wordClue {
+  color: var(--alt-color);
+}
+
+.back-button button.btn {
+  z-index: 101;
+}
+.showInstruction,
+img.pause-play-btn {
+  width: 70px;
+  height: 70px;
+}
+
+img.exit-btn {
+  width: calc(512px / 5.75);
+  height: calc(512px / 5.75);
+}
+.showInstruction {
+  opacity: 0.65;
+}
+.play-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 120px;
+  margin: var(--desktop-white-space-sm) auto 0 auto;
+}
+
+.quest-item-wrapper {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--dark-color-90);
+  z-index: 100;
+}
+
+.quest-items {
+  display: flex;
+}
+
+.quest-item {
+  display: block;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.puzzle-wrapper,
+.puzzle-wrapper2 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  height: 400px;
+  width: 400px;
+  border-radius: var(--desktop-white-space-sm);
+  background-color: var(--dark-color-90);
+  transition: opacity 1s ease-in-out;
+}
+
+.puzzle-frame {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+}
+
+.puzzle-frame:nth-of-type(1) {
+  top: 40px;
+  left: 40px;
+}
+
+.puzzle-frame:nth-of-type(2) {
+  top: 40px;
+  right: 40px;
+}
+.puzzle-frame:nth-of-type(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.puzzle-frame:nth-of-type(4) {
+  bottom: 40px;
+  right: 40px;
+}
+.puzzle-frame:nth-of-type(5) {
+  bottom: 40px;
+  left: 40px;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.quest-item-frame {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}

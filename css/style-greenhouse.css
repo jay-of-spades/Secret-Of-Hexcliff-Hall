@@ -1,0 +1,266 @@
+.game-wrapper {
+  background-image: url(../assets/img/greenhouse/greenhouse.jpg);
+}
+
+#instructionModal {
+  display: none;
+}
+
+#instructionElementometer {
+  display: none;
+}
+
+.game-item {
+  z-index: 10;
+}
+/* quest pots */
+.fire-pot {
+  width: 65px;
+  height: 130px;
+  top: 60%;
+  right: 14.9%;
+}
+
+.air-pot {
+  width: 95px;
+  height: 130px;
+  top: 64%;
+  right: 1.75%;
+}
+
+.metal-pot {
+  width: 80px;
+  height: 80px;
+  bottom: 25%;
+  left: 26.25%;
+}
+.water-pot {
+  width: 80px;
+  height: 160px;
+  bottom: 25%;
+  left: 12.95%;
+}
+/* other items */
+.bottle1 {
+  width: 25px;
+  height: 52px;
+  top: 75%;
+  right: 13.9%;
+}
+.bottle2 {
+  width: 25px;
+  height: 60px;
+  top: 73%;
+  right: 11.25%;
+}
+
+.pot1 {
+  width: 80px;
+  height: 130px;
+  top: 57%;
+  right: 4.75%;
+}
+
+.pot-stand {
+  width: 300px;
+  height: 130px;
+  bottom: 2%;
+  right: 2.75%;
+}
+.plant1 {
+  width: 180px;
+  height: 110px;
+  bottom: 1%;
+  right: 1.75%;
+}
+.plant2 {
+  width: 80px;
+  height: 70px;
+  bottom: 0%;
+  right: 14.25%;
+}
+.plant3 {
+  width: 150px;
+  height: 70px;
+  bottom: 0%;
+  right: 20.25%;
+}
+.plant4 {
+  width: 130px;
+  height: 160px;
+  bottom: 7%;
+  right: 25.25%;
+}
+
+.plant5 {
+  width: 90px;
+  height: 130px;
+  bottom: 7%;
+  right: 51.25%;
+}
+.plant6 {
+  width: 80px;
+  height: 100px;
+  bottom: 22%;
+  right: 48.25%;
+}
+.plant7 {
+  width: 80px;
+  height: 80px;
+  bottom: 17%;
+  right: 56.25%;
+}
+.plant8 {
+  width: 100px;
+  height: 60px;
+  bottom: 20%;
+  right: 60.85%;
+}
+.plant9 {
+  width: 80px;
+  height: 140px;
+  bottom: 5%;
+  right: 64.85%;
+}
+
+.plant10 {
+  width: 100px;
+  height: 120px;
+  bottom: 28%;
+  left: 20.25%;
+}
+
+.plant11 {
+  width: 100px;
+  height: 140px;
+  bottom: 28%;
+  left: 3.95%;
+}
+.plant12 {
+  width: 170px;
+  height: 200px;
+  bottom: 2.75%;
+  left: 0%;
+}
+.plant13 {
+  width: 170px;
+  height: 80px;
+  bottom: 0%;
+  left: 10%;
+  border-top-right-radius: 7rem;
+}
+.plant14 {
+  width: 100px;
+  height: 130px;
+  bottom: 2.5%;
+  left: 35%;
+}
+.left-drawer {
+  width: 110px;
+  height: 60px;
+  bottom: 12%;
+  left: 15.5%;
+  transform: rotate(-3deg);
+}
+.right-drawer {
+  width: 80px;
+  height: 50px;
+  bottom: 13%;
+  left: 23.5%;
+  transform: rotate(-4deg);
+}
+.lamp {
+  width: 80px;
+  height: 360px;
+  bottom: 7%;
+  right: 22.25%;
+}
+
+.door-right-column {
+  width: 80px;
+  height: 120px;
+  bottom: 7%;
+  right: 31.25%;
+}
+.steps {
+  width: 150px;
+  height: 80px;
+  bottom: 7%;
+  right: 36.95%;
+}
+.right-door {
+  width: 65px;
+  height: 80px;
+  bottom: 17%;
+  right: 36.95%;
+}
+.left-door {
+  width: 65px;
+  height: 80px;
+  bottom: 17%;
+  right: 41.95%;
+}
+.door-left-column {
+  width: 60px;
+  height: 120px;
+  bottom: 7%;
+  right: 47.25%;
+}
+
+.puzzle-wrapper {
+  display: grid;
+  place-items: center;
+}
+#elementometer-container {
+  background-image: url('../assets/img/greenhouse/elementometer.png');
+  width: 80%;
+  height: 80%;
+}
+
+.puzzle-frame {
+  display: none;
+}
+
+.puzzle-frame:nth-of-type(1) .frame {
+  background-image: url(../assets/img/greenhouse/01element.png);
+}
+.puzzle-frame:nth-of-type(2) .frame {
+  background-image: url(../assets/img/greenhouse/02element.png);
+}
+.puzzle-frame:nth-of-type(3) .frame {
+  background-image: url(../assets/img/greenhouse/03element.png);
+  opacity: 1;
+}
+.puzzle-frame:nth-of-type(4) .frame {
+  background-image: url(../assets/img/greenhouse/04element.png);
+}
+.puzzle-frame:nth-of-type(5) .frame {
+  background-image: url(../assets/img/greenhouse/05element.png);
+}
+
+.quest-item-wrapper {
+  flex-direction: column;
+}
+
+.quest-item {
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.quest-item:hover {
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 0, 0.9));
+}
+
+.quest-item:nth-of-type(1) {
+  background-image: url(../assets/img/greenhouse/01element.png);
+}
+.quest-item:nth-of-type(2) {
+  background-image: url(../assets/img/greenhouse/02element.png);
+}
+.quest-item:nth-of-type(3) {
+  background-image: url(../assets/img/greenhouse/04element.png);
+}
+.quest-item:nth-of-type(4) {
+  background-image: url(../assets/img/greenhouse/05element.png);
+}

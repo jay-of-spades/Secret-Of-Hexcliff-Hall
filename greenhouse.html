@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style-utilities.css">
+  <link rel="stylesheet" href="css/style-fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-greenhouse.css">
+  <title>Hexcliff's Second Room - The Greenhouse</title>
+</head>
+
+<body>
+  <div class="button-intro">
+    <div class="btn-wrap button-intro-left"><span>See Instruction</span>
+      <div class="c-pntr d-block centered-box"><img class="open-instruction" src="assets/img/icons/instruction.png"
+          alt="home icon">
+      </div>
+    </div>
+    <div class="button-intro-mid btn-wrap">
+      <span>or</span>
+    </div>
+    <div class="btn-wrap button-intro-right">
+      <span>Venture Forth</span>
+      <img class="exit-opening c-pntr" src="assets/img/icons/right-chevron.svg" alt="right-chevron">
+    </div>
+  </div>
+
+  <div class="button-container">
+    <div class="button-wrapper">
+      <a href="index.html" class="d-block c-pntr navlinks transition"><img src="assets/img/icons/home.svg"
+          alt="home icon"><span class="navlinks-label cca-bold transition transition">back to home</span></a>
+      <a href="entrance.html" class="d-block navlinks transition"><img class="prev-icon c-pntr transition"
+          src="assets/img/icons/left-chevron.svg" alt="left-chevron icon"><span
+          class="navlinks-label cca-bold transition">entrance room</span></a>
+      <div class="navlinks"><img class="showInstruction d-block c-pntr " src="assets/img/icons/instruction.png"
+          alt="instruction icon"><span class="navlinks-label cca-bold transition">instruction</span></div>
+      <div class="navlinks"><img class="d-block clue-icon c-pntr" src="assets/img/icons/clue.svg"
+          alt="right-chevron icon" onclick="openModal('#instructionElementometer', 1)"><span
+          class="navlinks-label cca-bold transition">clue</span></div>
+    </div>
+    <div class="button-wrapper">
+      <a href="study.html" class="d-block navlinks"><img class="next-icon c-pntr"
+          src="assets/img/icons/right-chevron.svg" alt="right-chevron icon"> <span
+          class="navlinks-label cca-bold transition">study</span></a>
+    </div>
+  </div>
+
+  <div class="showClue">
+    <div class="clue-wrapper">
+      <div class="clue-text">
+
+      </div>
+      <div class="back-button">
+        <button class="btn btn-alt d-block centered-box" onclick="closeEntranceRiddle()">Return</button>
+      </div>
+    </div>
+    <audio id="narrationAudio" hidden></audio>
+  </div>
+  <div id="instructionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="instructionText">Welcome to Hexcliff Hall's Greenhouse</p>
+      <img id="instructionImage" src="assets/img/greenhouse/instruction/01instruction.jpg"
+        alt="An illustration depicting a skeleton key dug out of the earth">
+      <audio id="instructionAudio" hidden>
+        <source src="assets/sound/06_greenhouse/instruction.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="play-btn">
+        <img class="pause-play-btn d-block centered-box c-pntr" src="assets/img/icons/pause-play.png"
+          alt="pause-play icon">
+        <img class="exit-btn d-block centered-box c-pntr" src="assets/img/icons/close.png" alt="return">
+      </div>
+    </div>
+  </div>
+  <div id="instructionElementometer" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="instructionText">Congratulations</p>
+      <img id="instructionImage" src="assets/img/greenhouse/instruction/09instruction.jpg" alt="Instruction Image">
+      <audio id="instructionAudio" hidden>
+        <source src="assets/sound/06_greenhouse/findingElementometer.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="play-btn">
+        <img class="pause-play-btn d-block centered-box c-pntr" src="assets/img/icons/pause-play.png"
+          alt="pause-play icon">
+        <img class="exit-btn d-block centered-box c-pntr" src="assets/img/icons/close.png" alt="return">
+      </div>
+    </div>
+  </div>
+
+  <div id="container">
+    <div class="game-wrapper bg-img-cover">
+
+      <!-- quest pot fire -->
+      <div class="game-item quest-pot fire-pot fumesBg c-pntr blink rounded-corner-sm bg-img-cover"></div>
+      <!-- end -->
+      <div class="game-item bottle1 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item bottle2 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item pot1 c-pntr blink rounded-corner-sm"></div>
+      <!-- quest pot air -->
+      <div class="game-item quest-pot air-pot fumesBg bg-img-cover c-pntr blink rounded-corner-sm"></div>
+      <!-- end -->
+      <div class="game-item pot-stand c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant1  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant2  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item plant3 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant4 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item lamp c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  door-right-column c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item steps  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  right-door  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  left-door c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  door-left-column c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item plant5 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant6 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant7  c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item   plant8 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant9 c-pntr blink rounded-corner-sm"></div>
+      <!-- quest metal pot -->
+      <div class="game-item quest-pot metal-pot fumesBg bg-img-cover c-pntr blink rounded-corner-sm"></div>
+      <!-- end -->
+      <div class="game-item  plant10 c-pntr blink rounded-corner-sm"></div>
+      <!-- quest water pot -->
+      <div class="game-item  quest-pot water-pot fumesBg bg-img-cover c-pntr blink rounded-corner-sm"></div>
+      <!-- end -->
+      <div class="game-item plant11 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant12 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant13 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  plant14 c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  left-drawer c-pntr blink rounded-corner-sm"></div>
+      <div class="game-item  right-drawer c-pntr blink rounded-corner-sm"></div>
+
+
+      <div class="quest-item-wrapper">
+        <h2 class="mr-darcy-bold text-centering text-spacing light-text">Choose the Problematic Element</h2>
+        <div class="quest-items">
+          <div id="earth-choice" class="quest-item sepiaBox  c-pntr bg-img-cover" draggable="false">
+          </div>
+          <div id="fire-choice" class="quest-item sepiaBox c-pntr bg-img-cover" draggable="false">
+          </div>
+          <div id="water-choice" class="quest-item sepiaBox c-pntr bg-img-cover" draggable="false">
+          </div>
+          <div id="metal-choice" class="quest-item sepiaBox c-pntr bg-img-cover" draggable="false">
+          </div>
+        </div>
+      </div>
+      <div class="puzzle-wrapper">
+        <div id="elementometer-container" class="bg-img-cover centered-box growShrink">
+        </div>
+      </div>
+      <div class="puzzle-wrapper2">
+        <div class="puzzle-frame bg-img-cover ">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <div class="frame  bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+        <div class="puzzle-frame bg-img-cover">
+          <div class="frame bg-img-cover"></div>
+          <div class="quest-item-frame bg-img-cover"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script-greenhouse.js"></script>
+</body>
+
+</html>

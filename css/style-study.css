@@ -1,0 +1,586 @@
+.game-wrapper {
+  background-image: url(../assets/img/study/study.jpg);
+}
+#instructionModal {
+  display: none;
+}
+
+.mode-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 80px;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.mode-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.mode-wrapper img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.jukebox {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url(../assets/img/icons/jukebox.png);
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.jukebox:hover {
+  filter: drop-shadow(0px 0px 25px var(--alt-color))
+    drop-shadow(0px 0px 25px var(--alt-color));
+  animation: blink 1.25s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    filter: drop-shadow(0px 0px 25px var(--alt-color))
+      drop-shadow(0px 0px 25px var(--alt-color));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 25px var(--alt-color-50))
+      drop-shadow(0px 0px 25px var(--alt-color-50));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 25px var(--alt-color))
+      drop-shadow(0px 0px 25px var(--alt-color));
+  }
+}
+
+.songs-choices {
+  display: none;
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  border-radius: 17px;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-color-75);
+  z-index: 1000;
+}
+
+.songs-choices-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.song-choice {
+  width: 125px;
+  height: 125px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.25s ease-in-out;
+}
+
+.song-choice:hover {
+  transform: scale(1.1);
+}
+
+.keep {
+  background-image: url(../assets/img/icons/keep.png);
+}
+
+.pass {
+  background-image: url(../assets/img/icons/pass.png);
+}
+
+.toss {
+  background-image: url(../assets/img/icons/toss.png);
+}
+
+#feedback {
+  display: none;
+  width: 750px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--dark-color-75);
+}
+
+.feedback-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#feedback-wrapper h2,
+#feedback-wrapper h4 {
+  width: 100%;
+}
+
+.feedback-item-wrapper {
+  padding: 1rem;
+}
+
+.game-item {
+  cursor: default;
+}
+
+.papers1 {
+  width: 90px;
+  height: 30px;
+  bottom: 20%;
+  left: 14.8%;
+}
+.paper2 {
+  width: 40px;
+  height: 30.5px;
+  bottom: 23%;
+  left: 22.24%;
+}
+.paper3 {
+  width: 60px;
+  height: 15.5px;
+  bottom: 21.5%;
+  left: 26.75%;
+}
+.paper4 {
+  width: 60px;
+  height: 20.5px;
+  bottom: 23.85%;
+  left: 30.45%;
+}
+.cup1 {
+  width: 35px;
+  height: 37.5px;
+  bottom: 20%;
+  left: 21.35%;
+}
+.cup2 {
+  width: 40px;
+  height: 37.5px;
+  bottom: 22%;
+  left: 24.35%;
+}
+
+.vase1 {
+  width: 25px;
+  height: 50.5px;
+  bottom: 23.85%;
+  left: 27.65%;
+}
+
+.drawer1 {
+  width: 60px;
+  height: 20.5px;
+  bottom: 16.5%;
+  left: 24.75%;
+  transform: rotate(-14deg);
+}
+.drawer2 {
+  width: 60px;
+  height: 20.5px;
+  bottom: 19%;
+  left: 29.95%;
+  transform: rotate(-14deg);
+}
+
+.book1 {
+  width: 70px;
+  height: 80px;
+  bottom: 24%;
+  left: 12.25%;
+}
+.book2 {
+  width: 70px;
+  height: 50px;
+  bottom: 34.5%;
+  left: 12.25%;
+  transform: rotate(7deg);
+}
+.book3 {
+  width: 70px;
+  height: 50px;
+  bottom: 41%;
+  left: 11.85%;
+  transform: rotate(10deg);
+}
+.book4 {
+  width: 60px;
+  height: 45px;
+  bottom: 48%;
+  left: 12.5%;
+  transform: rotate(14deg);
+}
+.book5 {
+  width: 60px;
+  height: 47.5px;
+  top: 39.35%;
+  left: 12.5%;
+  transform: rotate(16deg);
+}
+.book6 {
+  width: 120px;
+  height: 47.5px;
+  top: 42.35%;
+  left: 17.5%;
+  transform: rotate(12deg);
+}
+.book7 {
+  width: 120px;
+  height: 44.5px;
+  top: 49.15%;
+  left: 17.5%;
+  transform: rotate(10deg);
+}
+.book8 {
+  width: 120px;
+  height: 44.5px;
+  bottom: 39.15%;
+  left: 17.5%;
+  transform: rotate(7deg);
+}
+
+.book9 {
+  width: 120px;
+  height: 40.5px;
+  bottom: 34.15%;
+  left: 17.5%;
+  transform: rotate(3deg);
+}
+.book10 {
+  width: 120px;
+  height: 28.5px;
+  bottom: 30.15%;
+  left: 17.5%;
+  transform: rotate(-1deg);
+}
+.book11 {
+  width: 110px;
+  height: 32.5px;
+  bottom: 25.15%;
+  left: 17.75%;
+  transform: rotate(-1deg);
+}
+.book12 {
+  width: 95px;
+  height: 35.5px;
+  top: 43.15%;
+  right: 19.35%;
+  transform: rotate(-12deg);
+}
+.book13 {
+  width: 95px;
+  height: 39.5px;
+  top: 49.15%;
+  right: 19.35%;
+  transform: rotate(-9deg);
+}
+.book14 {
+  width: 100px;
+  height: 35.5px;
+  bottom: 40.15%;
+  right: 18.75%;
+  transform: rotate(-7deg);
+}
+.book15 {
+  width: 100px;
+  height: 35.5px;
+  bottom: 33.95%;
+  right: 18.75%;
+  transform: rotate(-4deg);
+  border-bottom-right-radius: 15rem;
+}
+
+.book16 {
+  width: 55px;
+  height: 50.5px;
+  bottom: 34.25%;
+  right: 13.15%;
+  transform: rotate(-4deg);
+  border-bottom-left-radius: 17rem;
+}
+.book17 {
+  width: 65px;
+  height: 50px;
+  bottom: 41%;
+  right: 13.15%;
+  transform: rotate(-6deg);
+}
+.book18 {
+  width: 62.5px;
+  height: 50px;
+  bottom: 47.75%;
+  right: 13.75%;
+  transform: rotate(-12deg);
+  border-top-left-radius: 2rem;
+}
+.book19 {
+  width: 67.5px;
+  height: 50px;
+  bottom: 54.75%;
+  right: 13.15%;
+  transform: rotate(-16deg);
+  border-top-left-radius: 2rem;
+}
+.magazine-pile1 {
+  width: 70px;
+  height: 70.5px;
+  bottom: 23.95%;
+  right: 20.95%;
+  transform: rotate(1deg);
+  border-bottom-right-radius: 2rem;
+}
+.magazine-pile2 {
+  width: 60px;
+  height: 26.5px;
+  bottom: 18.95%;
+  right: 21.95%;
+  transform: rotate(1deg);
+  border-bottom-right-radius: 2rem;
+}
+.chair1 {
+  width: 110px;
+  height: 110.5px;
+  bottom: 17.15%;
+  left: 34.75%;
+  transform: rotate(-1deg);
+}
+.chair2 {
+  width: 90px;
+  height: 110.5px;
+  bottom: 16.75%;
+  right: 35.05%;
+  border-top-left-radius: 15rem;
+  transform: rotate(-1deg);
+}
+.chair3 {
+  width: 55px;
+  height: 31.5px;
+  bottom: 14.25%;
+  right: 22.5%;
+  transform: rotate(7deg);
+}
+.mirror1 {
+  width: 50px;
+  height: 80.5px;
+  bottom: 32.15%;
+  left: 38.35%;
+  transform: rotate(-1deg);
+}
+.mirror2 {
+  width: 30px;
+  height: 65.5px;
+  bottom: 34.15%;
+  right: 39.7%;
+  transform: rotate(-1deg);
+}
+
+.buoquet {
+  width: 40px;
+  height: 38.5px;
+  bottom: 24.5%;
+  left: 46.35%;
+  transform: rotate(-1deg);
+}
+.globe {
+  width: 40px;
+  height: 38.5px;
+  bottom: 24.5%;
+  left: 52%;
+  transform: rotate(-1deg);
+}
+.bottle {
+  width: 30px;
+  height: 38.5px;
+  bottom: 20%;
+  right: 41.75%;
+  transform: rotate(-1deg);
+}
+.wine-closet {
+  width: 50px;
+  height: 38.5px;
+  bottom: 25.9%;
+  right: 37.75%;
+  transform: rotate(-1deg);
+}
+.transistor-radio {
+  width: 40px;
+  height: 43px;
+  bottom: 29.25%;
+  right: 35.95%;
+  transform: rotate(-1deg);
+}
+
+.quest-item-wrapper {
+  width: 400px;
+}
+.quest-items {
+  justify-content: space-between;
+}
+
+.quest-item {
+  position: relative;
+  margin-right: 0;
+  opacity: 0.5;
+  border: solid 1px var(--accent-color);
+  border-radius: 5px;
+  background-size: 70% 70%;
+}
+
+.quest-item-span {
+  display: none;
+  width: 475px;
+  height: 30px;
+  position: absolute;
+  top: -34%;
+  font-size: var(--desktop-fs-body);
+  line-height: 30px;
+  color: var(--light-color);
+  background-color: var(--dark-color-75);
+  border-radius: 5px;
+}
+
+.quest-item:hover .quest-item-span {
+  display: block;
+}
+.quest-item:nth-of-type(1) {
+  background-image: url(../assets/img/icons/music-note1.png);
+}
+.quest-item:nth-of-type(2) {
+  background-image: url(../assets/img/icons/music-note2.png);
+}
+.quest-item:nth-of-type(3) {
+  background-image: url(../assets/img/icons/music-note3.png);
+}
+
+.puzzle-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.puzzle-frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 90px;
+  height: 90px;
+}
+
+.puzzle-frame:nth-of-type(1) {
+  top: auto;
+  left: auto;
+}
+.puzzle-frame:nth-of-type(2) {
+  top: auto;
+  left: 0;
+}
+.puzzle-frame:nth-of-type(3) {
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+.frame {
+  width: 80px;
+  height: 80px;
+  position: static;
+  border: solid 1px var(--accent-color);
+  border-radius: 50%;
+  font-size: 75px;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    hsla(341, 11%, 30%, 1) 0%,
+    hsla(343, 45%, 43%, 1) 53%,
+    hsla(306, 25%, 52%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(341, 11%, 30%, 1) 0%,
+    hsla(343, 45%, 43%, 1) 53%,
+    hsla(306, 25%, 52%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(341, 11%, 30%, 1) 0%,
+    hsla(343, 45%, 43%, 1) 53%,
+    hsla(306, 25%, 52%, 1) 100%
+  );
+}
+
+.quest-item-frame {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#lives-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  font-size: var(--desktop-fs-title-head);
+  background-color: var(--dark-color-75);
+  z-index: 500;
+}
+
+.lose-and-laugh {
+  position: fixed;
+  display: none;
+  place-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2000;
+  background-color: var(--dark-color-50);
+}
+
+.lose-img {
+  width: calc(2166px / 2);
+  height: calc(1214px / 2);
+  background-image: url(../assets/img/study/lose-and-laugh.jpg);
+}
+
+#farewell {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-color-90);
+  z-index: 2020;
+}
+
+.farewell-wrapper {
+  width: 80%;
+  margin-top: var(--desktop-white-space-xl);
+}
+
+.farewell-wrapper p {
+  margin-bottom: var(--desktop-white-space-md);
+}
+
+.hexcliff-logo {
+  display: none;
+  z-index: 5000;
+}
