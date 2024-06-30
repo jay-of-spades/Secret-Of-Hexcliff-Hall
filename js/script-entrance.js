@@ -1,29 +1,36 @@
+let prodMode =
+  window.location.href ===
+  'https://jay-of-spades.github.io/Secrets-Of-Hexcliff-Hall/'
+    ? true
+    : false;
+const basePath = prodMode ? '/Secrets-Of-Hexcliff-Hall' : '';
+
 let crestIMG = [
-  '../assets/img/entranceHall/acorn.jpg',
-  '../assets/img/entranceHall/stag.jpg',
-  '../assets/img/entranceHall/lion.jpg',
-  '../assets/img/entranceHall/feather.jpg',
+  `${basePath}/assets/img/entranceHall/acorn.jpg`,
+  `${basePath}/assets/img/entranceHall/stag.jpg`,
+  `${basePath}/assets/img/entranceHall/lion.jpg`,
+  `${basePath}/assets/img/entranceHall/feather.jpg`,
 ];
 
 let audioFiles = [
-  '../assets/sound/03_entrance/01entrance.m4a',
-  '../assets/sound/03_entrance/02entrance.m4a',
-  '../assets/sound/03_entrance/03entrance.m4a',
-  '../assets/sound/03_entrance/04entrance.m4a',
-  '../assets/sound/03_entrance/05entrance.m4a',
-  '../assets/sound/03_entrance/06entrance.m4a',
-  '../assets/sound/03_entrance/07entrance.m4a',
-  '../assets/sound/03_entrance/08entrance.m4a',
-  '../assets/sound/03_entrance/09entrance.m4a',
-  '../assets/sound/03_entrance/10entrance.m4a',
-  '../assets/sound/03_entrance/11entrance.m4a',
-  '../assets/sound/03_entrance/12entrance.m4a',
-  '../assets/sound/03_entrance/13entrance.m4a',
-  '../assets/sound/03_entrance/14entrance.m4a',
-  '../assets/sound/03_entrance/15entrance.m4a',
-  '../assets/sound/03_entrance/16entrance.m4a',
-  '../assets/sound/03_entrance/17entrance.m4a',
-  '../assets/sound/03_entrance/18entrance.m4a',
+  `${basePath}/assets/sound/03_entrance/01entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/02entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/03entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/04entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/05entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/06entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/07entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/08entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/09entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/10entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/11entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/12entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/13entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/14entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/15entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/16entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/17entrance.m4a`,
+  `${basePath}/assets/sound/03_entrance/18entrance.m4a`,
 ];
 
 let crestPieces = [
@@ -59,16 +66,16 @@ let pausePlayBtn = document.querySelector('.pause-play-btn');
 let closeButton = document.querySelector('.exit-btn');
 let instructionTimeStamps = [13, 20, 38, 51, 63, 77, 83, 86, 95, 105];
 let instructionImgSequence = [
-  '../assets/img/entranceHall/instructions/01instructions.jpg',
-  '../assets/img/entranceHall/instructions/02instructions.jpg',
-  '../assets/img/entranceHall/instructions/03instructions.gif',
-  '../assets/img/entranceHall/instructions/04instructions.jpg',
-  '../assets/img/entranceHall/instructions/05instructions.jpg',
-  '../assets/img/entranceHall/instructions/06instructions.jpg',
-  '../assets/img/entranceHall/instructions/07instructions.gif',
-  '../assets/img/entranceHall/instructions/08instructions.jpg',
-  '../assets/img/entranceHall/instructions/09instructions.jpg',
-  '../assets/img/entranceHall/instructions/10instructions.jpg',
+  `${basePath}/assets/img/entranceHall/instructions/01instructions.jpg`,
+  `${basePath}/assets/img/entranceHall/instructions/02instructions.jpg`,
+  `${basePath}/assets/img/entranceHall/instructions/03instructions.gif`,
+  `${basePath}/assets/img/entranceHall/instructions/04instructions.jpg`,
+  `${basePath}/assets/img/entranceHall/instructions/05instructions.jpg`,
+  `${basePath}/assets/img/entranceHall/instructions/06instructions.jpg`,
+  `${basePath}/assets/img/entranceHall/instructions/07instructions.gif`,
+  `${basePath}/assets/img/entranceHall/instructions/08instructions.jpg`,
+  `${basePath}/assets/img/entranceHall/instructions/09instructions.jpg`,
+  `${basePath}/assets/img/entranceHall/instructions/10instructions.jpg`,
 ];
 let exitOpening = document.querySelector('.exit-opening');
 let btnIntro = document.querySelector('.button-intro');
@@ -78,8 +85,8 @@ let openInstruction = document.querySelector('.open-instruction');
 function resetAudio() {
   instructionAudio.currentTime = 0;
   instructionAudio.pause();
-  pausePlayBtn.src = '../assets/img/icons/pause-play.png';
-  instructionImage.src = '../assets/img/hexcliffHall.jpg';
+  pausePlayBtn.src = `${basePath}/assets/img/icons/pause-play.png`;
+  instructionImage.src = `${basePath}/assets/img/hexcliffHall.jpg`;
 }
 
 instructionIcon.addEventListener('click', openModal);
@@ -161,10 +168,10 @@ function instructionSequence() {
 pausePlayBtn.addEventListener('click', function () {
   if (instructionAudio.paused) {
     instructionAudio.play();
-    pausePlayBtn.src = '../assets/img/icons/play.png';
+    pausePlayBtn.src = `${basePath}/assets/img/icons/play.png`;
   } else {
     instructionAudio.pause();
-    pausePlayBtn.src = '../assets/img/icons/pause.png';
+    pausePlayBtn.src = `${basePath}/assets/img/icons/pause.png`;
   }
 });
 
@@ -173,13 +180,13 @@ pausePlayBtn.addEventListener('click', function () {
 //begin - game play
 for (let i = 1; i <= 16; i++) {
   let number = i.toString().padStart(2, '0');
-  let filePath = `../assets/sound/rightChoice/${number}correct.mp3`;
+  let filePath = `${basePath}/assets/sound/rightChoice/${number}correct.mp3`;
   affirmativeResponse.push(filePath);
 }
 
 for (let i = 1; i <= 15; i++) {
   let number = i.toString().padStart(2, '0');
-  let filePath = `../assets/sound/wrongChoice/${number}wrong.mp3`;
+  let filePath = `${basePath}/assets/sound/wrongChoice/${number}wrong.mp3`;
   negativeResponse.push(filePath);
 }
 
@@ -335,8 +342,7 @@ function drop(e) {
       if (framesWithMatchingCrests === crestPiecesTotal) {
         let lastCrestFrame = puzzleFrames[2].querySelector('.quest-item-frame');
         if (lastCrestFrame) {
-          lastCrestFrame.style.backgroundImage =
-            "url('../assets/img/entranceHall/skeletonKey.jpg')";
+          lastCrestFrame.style.backgroundImage = `url(${basePath}/assets/img/entranceHall/skeletonKey.jpg')`;
 
           let nextIcon = document.querySelector('.next-icon');
           nextIcon.style.opacity = '1';
@@ -346,7 +352,9 @@ function drop(e) {
           crests.forEach(crest => {
             crest.style.backgroundImage = '';
           });
-          let closingSound = new Audio('../assets/sound/skeletonKeyFound.mp3');
+          let closingSound = new Audio(
+            `${basePath}/assets/sound/skeletonKeyFound.mp3`
+          );
           closingSound.play();
           crestsArranged = true;
         }
