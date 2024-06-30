@@ -10,13 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
   let source;
   let isPlaying = false;
   let concatenatedBuffer;
-  let devMode =
-    window.location.href === 'https://jay-of-spades.github.io/' ? false : true;
+  let prodMode =
+    window.location.href ===
+    'https://jay-of-spades.github.io/Secrets-Of-Hexcliff-Hall/'
+      ? true
+      : false;
   let highlightTimeouts = [];
   let resumeTime = 0; // To store the time from which audio should resume
 
   // Determine the base path for the assets
-  const basePath = devMode ? '' : '/Secrets-Of-Hexcliff-Hall';
+  const basePath = prodMode ? '/Secrets-Of-Hexcliff-Hall' : '';
 
   const audioFiles = [
     `${basePath}/assets/sound/01_inherit/01inherit.m4a`,
