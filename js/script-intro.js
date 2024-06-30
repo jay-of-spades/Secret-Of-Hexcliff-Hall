@@ -50,7 +50,16 @@ document.addEventListener('DOMContentLoaded', function () {
     if (current < phrases.length) {
       phrases[current].classList.add('highlight');
       narrationAudio.src = audioFiles[current - 1];
-      narrationAudio.play();
+      let promise = narrationAudio.play();
+      if (promise !== undefined) {
+        promise
+          .then(() => {
+            console.log('Autoplay started');
+          })
+          .catch(error => {
+            console.log('Autoplay was prevented: ', error);
+          });
+      }
       current++;
     } else {
       narrationAudio.pause();
