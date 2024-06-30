@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
   let source;
   let isPlaying = false;
   let concatenatedBuffer;
-  let devMode = true;
+  let devMode =
+    window.location.href === 'https://jay-of-spades.github.io/' ? false : true;
   let highlightTimeouts = [];
   let resumeTime = 0; // To store the time from which audio should resume
 
