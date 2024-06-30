@@ -79,6 +79,5 @@ document.addEventListener('DOMContentLoaded', function () {
   playButton.addEventListener('click', function () {
     console.log('play button clicked');
     highlightAndPlayPhrase();
-    playButton.style.display = 'none';
   });
 });
