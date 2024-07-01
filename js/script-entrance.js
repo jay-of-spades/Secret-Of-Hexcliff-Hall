@@ -34,7 +34,7 @@ let audioFiles = [
 let crestPieces = [
   { name: 'acorn', found: false, img: crestIMG[0], crestLocation: NaN },
   { name: 'stag', found: false, img: crestIMG[1], crestLocation: NaN },
-  { name: 'lion', found: false, img: crestIMG[2], crestLocation: NaN },
+  { name: 'Lion', found: false, img: crestIMG[2], crestLocation: NaN },
   { name: 'feather', found: false, img: crestIMG[3], crestLocation: NaN },
 ];
 let affirmativeResponse = [];
