@@ -526,7 +526,7 @@
 
 .quest-item-frame {
   display: block;
-  cursor: pointer;
+  cursor: default;
   position: absolute;
   width: 100%;
   height: 100%;

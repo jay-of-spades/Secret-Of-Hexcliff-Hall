@@ -412,6 +412,7 @@ exitOpening.addEventListener('click', function () {
   btnIntro.style.display = 'none';
   modeContainer.style.display = 'block';
   playPillarSong.disbaled = true;
+  playPillarSong.style.cursor = 'default';
   playPillarSong.style.opacity = '0';
   puzzleWrapper.style.opacity = '0';
   puzzleWrapper.style.pointerEvents = 'none';
@@ -881,6 +882,10 @@ function checkIfPuzzleComplete() {
     playPillarSong.style.opacity = '1';
     playPillarSong.style.pointerEvents = 'all';
     playPillarSong.style.cursor = 'pointer';
+    questItemFrames.forEach(frame => {
+      frame.style.pointerEvents = 'all';
+      frame.style.cursor = 'pointer';
+    });
   }
 }
 
