@@ -1,28 +1,31 @@
+const prodMode = window.location.href.includes('jay-of-spades.github.io/');
+const basePath = prodMode ? '/Secrets-Of-Hexcliff-Hall' : '';
+
 let instructionImgSequence = [
   [
-    '../assets/img/study/instructions/00instruction.jpg',
-    '../assets/img/study/instructions/01instruction.jpg',
-    '../assets/img/study/instructions/02instruction.jpg',
-    '../assets/img/study/instructions/03instruction.jpg',
-    '../assets/img/study/instructions/04instruction.jpg',
-    '../assets/img/study/instructions/05instruction.jpg',
-    '../assets/img/study/instructions/06instruction.jpg',
-    '../assets/img/study/instructions/07instruction.jpg',
-    '../assets/img/study/instructions/08instruction.jpg',
-    '../assets/img/study/instructions/09instruction.jpg',
-    '../assets/img/study/instructions/10instruction.jpg',
-    '../assets/img/study/instructions/11instruction.jpg',
-    '../assets/img/study/instructions/12instruction.jpg',
-    '../assets/img/study/instructions/13instruction.jpg',
-    '../assets/img/study/instructions/14instruction.jpg',
-    '../assets/img/study/instructions/15instruction.jpg',
-    '../assets/img/study/instructions/16instruction.jpg',
-    '../assets/img/study/instructions/17instruction.jpg',
-    '../assets/img/study/instructions/18instruction.jpg',
-    '../assets/img/study/instructions/19instruction.jpg',
-    '../assets/img/study/instructions/20instruction.jpg',
-    '../assets/img/study/instructions/21instruction.jpg',
-    '../assets/img/study/instructions/22instruction.jpg',
+    `${basePath}/assets/img/study/instructions/00instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/01instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/02instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/03instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/04instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/05instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/06instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/07instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/08instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/09instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/10instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/11instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/12instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/13instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/14instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/15instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/16instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/17instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/18instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/19instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/20instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/21instruction.jpg`,
+    `${basePath}/assets/img/study/instructions/22instruction.jpg`,
   ],
 ];
 
@@ -33,6 +36,7 @@ let instructionTimeStamps = [
     148.537332, 162.398085, 179.351857, 192.030624, 211.251688,
   ],
 ];
+
 let instructionAudio = document.getElementById('instructionAudio');
 let instructionImage = document.getElementById('instructionImage');
 let instructionIcon = document.querySelector('.showInstruction');
@@ -164,6 +168,7 @@ document
   });
 
 console.log(passagesWithPageNumbers);
+
 let pillarSongs = [
   {
     id: 1,
@@ -174,9 +179,8 @@ let pillarSongs = [
       'Oh, I believe in yesterday',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07study/pillarSongsIntro/01pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/01pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07study/pillarSongsIntro/01pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/01pillarSongs.m4a`,
   },
   {
     id: 2,
@@ -187,9 +191,8 @@ let pillarSongs = [
       "I hope someday you'll join us",
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/02pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/02pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/02pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/02pillarSongs.m4a`,
   },
   {
     id: 3,
@@ -200,9 +203,8 @@ let pillarSongs = [
       'But the kid is not my son',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/03pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/03pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/03pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/03pillarSongs.m4a`,
   },
   {
     id: 4,
@@ -213,9 +215,8 @@ let pillarSongs = [
       'Caught in a landslide, no escape from reality',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/04pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/04pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/04pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/04pillarSongs.m4a`,
   },
   {
     id: 5,
@@ -226,9 +227,8 @@ let pillarSongs = [
       'Remember to let her into your heart',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/05pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/05pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/05pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/05pillarSongs.m4a`,
   },
   {
     id: 6,
@@ -239,18 +239,16 @@ let pillarSongs = [
       'That something wasnt right here',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/06pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/06pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/06pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/06pillarSongs.m4a`,
   },
   {
     id: 7,
     name: 'I want it that way',
     lines: ['You are my fire', 'The one desire', 'Believe when I say'],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/07pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/07pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/07pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/07pillarSongs.m4a`,
   },
   {
     id: 8,
@@ -261,9 +259,8 @@ let pillarSongs = [
       'That is how I know you go on',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/08pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/08pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/08pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/08pillarSongs.m4a`,
   },
   {
     id: 9,
@@ -274,9 +271,8 @@ let pillarSongs = [
       'I feel stupid and contagious',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/09pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/09pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/09pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/09pillarSongs.m4a`,
   },
   {
     id: 10,
@@ -287,9 +283,8 @@ let pillarSongs = [
       'Under the moonlight',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/10pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/10pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/10pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/10pillarSongs.m4a`,
   },
   {
     id: 11,
@@ -300,9 +295,8 @@ let pillarSongs = [
       'By now you shouldve somehow',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/11pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/11pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/11pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/11pillarSongs.m4a`,
   },
   {
     id: 12,
@@ -313,9 +307,8 @@ let pillarSongs = [
       'Like a virgin, when your heart beats, next to mine',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/12pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/12pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/12pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/12pillarSongs.m4a`,
   },
   {
     id: 13,
@@ -326,9 +319,8 @@ let pillarSongs = [
       'The way a fool would do, madly',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/13pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/13pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/13pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/13pillarSongs.m4a`,
   },
   {
     id: 14,
@@ -339,9 +331,8 @@ let pillarSongs = [
       'But then I spent so many nights',
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/14pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/14pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/14pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/14pillarSongs.m4a`,
   },
   {
     id: 15,
@@ -352,11 +343,11 @@ let pillarSongs = [
       "But darlin' when I hold you",
     ],
     pageNumber: [],
-    pillarSongIntroSrc:
-      '../assets/sound/07Study/pillarSongsIntro/15pillarSongs.m4a',
-    pillarSongsSrc: '../assets/sound/07Study/pillarSongs/15pillarSongs.m4a',
+    pillarSongIntroSrc: `${basePath}/assets/sound/07Study/pillarSongsIntro/15pillarSongs.m4a`,
+    pillarSongsSrc: `${basePath}/assets/sound/07Study/pillarSongs/15pillarSongs.m4a`,
   },
 ];
+
 let currentItem = null;
 let btnContainer = document.querySelector('.button-container');
 let gameItems = document.querySelectorAll('.game-item');
@@ -395,6 +386,7 @@ let farewellTimestamps = [
   215.299955, 224.230918, 230.30204, 233.868449, 239.189087, 246.516955,
   252.708438,
 ];
+
 console.log('Farewell Timestamps:', farewellTimestamps, 'phrases:', phrases);
 
 let hexcliffLogo = document.querySelector('.hexcliff-logo');
@@ -402,6 +394,7 @@ let hexcliffLogo = document.querySelector('.hexcliff-logo');
 // Instruction Modal
 console.log('Timestamps: ', instructionTimeStamps);
 console.log('Image Sequence: ', instructionImgSequence);
+
 document.querySelector('#farewellAudio').addEventListener('pause', function () {
   console.log('Timestamp:', this.currentTime);
 });
@@ -435,8 +428,6 @@ function openModal(modalId, index, xtrFxn) {
     instructionImgSrc: modal.querySelector('#instructionImage').src,
     instructionImageSequence: instructionImgSequence[index],
     instructionTimestamps: instructionTimeStamps[index],
-    pausePlayBtn: modal.querySelector('.pause-play-btn'),
-    exitBtn: modal.querySelector('.exit-btn'),
     pausePlayBtn: modal.querySelector('.pause-play-btn'),
     exitBtn: modal.querySelector('.exit-btn'),
   };
@@ -481,7 +472,7 @@ function resetAudio() {
   if (currentModal.instructionAudio) {
     currentModal.instructionAudio.currentTime = 0;
     currentModal.instructionAudio.pause();
-    currentModal.pausePlayBtn.src = '../assets/img/icons/pause-play.png';
+    currentModal.pausePlayBtn.src = `${basePath}/assets/img/icons/pause-play.png`;
     currentModal.instructionImage.src = currentModal.instructionImgSrc;
   }
 }
@@ -513,10 +504,10 @@ function instructionSequence(index) {
 function pausePlay() {
   if (currentModal.instructionAudio.paused) {
     currentModal.instructionAudio.play();
-    currentModal.pausePlayBtn.src = '../assets/img/icons/play.png';
+    currentModal.pausePlayBtn.src = `${basePath}/assets/img/icons/play.png`;
   } else {
     currentModal.instructionAudio.pause();
-    currentModal.pausePlayBtn.src = '../assets/img/icons/pause.png';
+    currentModal.pausePlayBtn.src = `${basePath}/assets/img/icons/pause.png`;
   }
 }
 //end - instructions
@@ -541,7 +532,7 @@ gameItems.forEach(item => {
     if (isModeChosen) {
       return;
     } else {
-      playAudio('../assets/sound/07Study/gameMode.mp3');
+      playAudio(`${basePath}/assets/sound/07Study/gameMode.mp3`);
       hardMode.classList.add('blink2');
       hardMode.classList.add('geelbox');
       easyMode.classList.add('blink2');
@@ -859,11 +850,11 @@ function drop(event) {
 function playFeedbackSound(dropTarget) {
   let audioSrc;
   if (dropTarget.id === 'drop-target-1') {
-    audioSrc = '../assets/sound/07Study/vault/01Pillar.mp3';
+    audioSrc = `${basePath}/assets/sound/07Study/vault/01Pillar.mp3`;
   } else if (dropTarget.id === 'drop-target-2') {
-    audioSrc = '../assets/sound/07Study/vault/02Pillar.mp3';
+    audioSrc = `${basePath}/assets/sound/07Study/vault/02Pillar.mp3`;
   } else if (dropTarget.id === 'drop-target-3') {
-    audioSrc = '../assets/sound/07Study/vault/03Pillar.mp3';
+    audioSrc = `${basePath}/assets/sound/07Study/vault/03Pillar.mp3`;
   }
 
   if (audioSrc) {
@@ -924,12 +915,12 @@ playPillarSong.addEventListener('click', () => {
     });
   } else {
     console.log('Incorrect order');
-    const failAudio = new Audio('../assets/sound/07Study/fail.m4a');
+    const failAudio = new Audio(`${basePath}/assets/sound/07Study/fail.m4a`);
     failAudio.play();
     failAudio.addEventListener('ended', () => {
       loseAndLaugh.style.display = 'grid';
       const fertilizerAudio = new Audio(
-        '../assets/sound/07Study/fertilizer.mp3'
+        `${basePath}/assets/sound/07Study/fertilizer.mp3`
       );
       fertilizerAudio.play();
       fertilizerAudio.addEventListener('ended', () => {
