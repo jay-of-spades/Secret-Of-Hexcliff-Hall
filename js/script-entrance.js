@@ -6,7 +6,7 @@ const basePath = prodMode ? '/Secrets-Of-Hexcliff-Hall' : '';
 let crestIMG = [
   `${basePath}/assets/img/entranceHall/acorn.jpg`,
   `${basePath}/assets/img/entranceHall/stag.jpg`,
-  `${basePath}/assets/img/entranceHall/lion.jpg`,
+  `${basePath}/assets/img/entranceHall/Lion.jpg`,
   `${basePath}/assets/img/entranceHall/feather.jpg`,
 ];
 
