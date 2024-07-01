@@ -1,46 +1,51 @@
+const prodMode = window.location.href.includes('jay-of-spades.github.io/');
+const basePath = prodMode ? '/Secrets-Of-Hexcliff-Hall' : '';
+
 let audioFiles = [
-  '../assets/sound/06_greenhouse/findingElementometer.mp3',
-  '../assets/sound/06_greenhouse/01confirmEl/01Choice_Earth.mp3',
-  '../assets/sound/06_greenhouse/01confirmEl/02Choice_Fire.mp3',
-  '../assets/sound/06_greenhouse/01confirmEl/03Choice_Water.mp3',
-  ' ../assets/sound/06_greenhouse/01confirmEl/04Choice_Metal.mp3',
-  '../assets/sound/06_greenhouse/chooseAnElement.mp3',
-  '../assets/sound/06_greenhouse/instruction.mp3',
-  '../assets/sound/06_greenhouse/harmonizedElements.mp3',
+  `${basePath}/assets/sound/06_greenhouse/findingElementometer.mp3`,
+  `${basePath}/assets/sound/06_greenhouse/01confirmEl/01Choice_Earth.mp3`,
+  `${basePath}/assets/sound/06_greenhouse/01confirmEl/02Choice_Fire.mp3`,
+  `${basePath}/assets/sound/06_greenhouse/01confirmEl/03Choice_Water.mp3`,
+  `${basePath}/assets/sound/06_greenhouse/01confirmEl/04Choice_Metal.mp3`,
+  `${basePath}/assets/sound/06_greenhouse/chooseAnElement.mp3`,
+  `${basePath}/assets/sound/06_greenhouse/instruction.mp3`,
+  `${basePath}/assets/sound/06_greenhouse/harmonizedElements.mp3`,
 ];
 
 let instructionImgSequence = [
   [
-    '../assets/img/greenhouse/instruction/02instruction.jpg',
-    '../assets/img/greenhouse/instruction/03instruction.jpg',
-    '../assets/img/greenhouse/instruction/04instruction.gif',
-    '../assets/img/greenhouse/instruction/05instruction.jpg',
-    '../assets/img/greenhouse/instruction/06instruction.jpg',
-    '../assets/img/greenhouse/instruction/07instruction.jpg',
-    '../assets/img/greenhouse/instruction/08instruction.jpg',
-    '../assets/img/greenhouse/instruction/09instruction.jpg',
-    '../assets/img/greenhouse/instruction/10instruction.jpg',
-    '../assets/img/greenhouse/instruction/11instruction.jpg',
-    '../assets/img/greenhouse/instruction/12instruction.jpg',
+    `${basePath}/assets/img/greenhouse/instruction/02instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/03instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/04instruction.png`,
+    `${basePath}/assets/img/greenhouse/instruction/05instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/06instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/07instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/08instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/09instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/10instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/11instruction.jpg`,
+    `${basePath}/assets/img/greenhouse/instruction/12instruction.jpg`,
   ],
   [
-    '../assets/img/greenhouse/elementInstruction/01ele.jpg',
-    '../assets/img/greenhouse/elementInstruction/02ele.jpg',
-    '../assets/img/greenhouse/elementInstruction/03ele.jpg',
-    '../assets/img/greenhouse/elementInstruction/04ele.jpg',
-    '../assets/img/greenhouse/elementInstruction/05ele.jpg',
-    '../assets/img/greenhouse/elementInstruction/06ele.png',
-    '../assets/img/greenhouse/elementInstruction/07ele.jpg',
-    '../assets/img/greenhouse/elementInstruction/08ele.jpg',
+    `${basePath}/assets/img/greenhouse/elementInstruction/01ele.jpg`,
+    `${basePath}/assets/img/greenhouse/elementInstruction/02ele.jpg`,
+    `${basePath}/assets/img/greenhouse/elementInstruction/03ele.jpg`,
+    `${basePath}/assets/img/greenhouse/elementInstruction/04ele.jpg`,
+    `${basePath}/assets/img/greenhouse/elementInstruction/05ele.jpg`,
+    `${basePath}/assets/img/greenhouse/elementInstruction/06ele.png`,
+    `${basePath}/assets/img/greenhouse/elementInstruction/07ele.jpg`,
+    `${basePath}/assets/img/greenhouse/elementInstruction/08ele.jpg`,
   ],
 ];
+
 let instructionTimeStamps = [
   [4, 12, 18, 32, 42, 53, 73, 83, 95, 115, 128],
   [14, 18, 35, 61, 73, 82, 100, 111],
 ];
+
 console.log('Timestamps: ', instructionTimeStamps);
 console.log('Image Sequence: ', instructionImgSequence);
-document;
+
 let instructionAudio = document.getElementById('instructionAudio');
 let instructionImage = document.getElementById('instructionImage');
 let instructionIcon = document.querySelector('.showInstruction');
@@ -58,7 +63,7 @@ let elements = ['earth', 'metal', 'fire', 'water'];
 let questPotLocations = [];
 let showElementometer = document.querySelector('#showElementometer');
 let isElementometerFound = false;
-let elementometerIMG = '../assets/img/greenhouse/elementometer.jpg';
+let elementometerIMG = `${basePath}/assets/img/greenhouse/elementometer.jpg`;
 let elementFreeItems = Array.from(gameItems).filter(
   item => !item.classList.contains('quest-pot')
 );
@@ -85,6 +90,7 @@ let currentModal = {
   pausePlayBtn: null,
   exitBtn: null,
 };
+
 let loadChoices = function () {
   puzzleWrapper.style.opacity = '1';
   questItemWrapper.style.display = 'flex';
@@ -92,6 +98,7 @@ let loadChoices = function () {
   clueIcon.style.opacity = '1';
   clueIcon.style.cursor = 'pointer';
 };
+
 let clueIcon = document.querySelector('.clue-icon');
 let elementometerContainer = document.querySelector('#elementometer-container');
 let puzzleFrames = document.querySelectorAll('.puzzle-frame');
@@ -122,8 +129,6 @@ function openModal(modalId, index, xtrFxn) {
     instructionImgSrc: modal.querySelector('#instructionImage').src,
     instructionImageSequence: instructionImgSequence[index],
     instructionTimestamps: instructionTimeStamps[index],
-    pausePlayBtn: modal.querySelector('.pause-play-btn'),
-    exitBtn: modal.querySelector('.exit-btn'),
     pausePlayBtn: modal.querySelector('.pause-play-btn'),
     exitBtn: modal.querySelector('.exit-btn'),
   };
@@ -166,7 +171,7 @@ function resetAudio() {
   if (currentModal.instructionAudio) {
     currentModal.instructionAudio.currentTime = 0;
     currentModal.instructionAudio.pause();
-    currentModal.pausePlayBtn.src = '../assets/img/icons/pause-play.png';
+    currentModal.pausePlayBtn.src = `${basePath}/assets/img/icons/pause-play.png`;
     currentModal.instructionImage.src = currentModal.instructionImgSrc;
   }
 }
@@ -198,12 +203,13 @@ function instructionSequence(index) {
 function pausePlay() {
   if (currentModal.instructionAudio.paused) {
     currentModal.instructionAudio.play();
-    currentModal.pausePlayBtn.src = '../assets/img/icons/play.png';
+    currentModal.pausePlayBtn.src = `${basePath}/assets/img/icons/play.png`;
   } else {
     currentModal.instructionAudio.pause();
-    currentModal.pausePlayBtn.src = '../assets/img/icons/pause.png';
+    currentModal.pausePlayBtn.src = `${basePath}/assets/img/icons/pause.png`;
   }
 }
+
 //end - instructions
 
 // Start of Game
@@ -221,13 +227,13 @@ function playRandomSound(soundArray) {
 
 for (let i = 1; i <= 16; i++) {
   let number = i.toString().padStart(2, '0');
-  let filePath = `../assets/sound/rightChoice/${number}correct.mp3`;
+  let filePath = `${basePath}/assets/sound/rightChoice/${number}correct.mp3`;
   affirmativeResponse.push(filePath);
 }
 
 for (let i = 1; i <= 15; i++) {
   let number = i.toString().padStart(2, '0');
-  let filePath = `../assets/sound/wrongChoice/${number}wrong.mp3`;
+  let filePath = `${basePath}/assets/sound/wrongChoice/${number}wrong.mp3`;
   negativeResponse.push(filePath);
 }
 
@@ -446,4 +452,4 @@ function hideElementometer() {
     clueIcon.style.opacity = '0';
   });
 }
-// Eng Game
+// End Game
