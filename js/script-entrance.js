@@ -112,118 +112,55 @@ function closeModal() {
 
 instructionAudio.addEventListener('timeupdate', instructionSequence);
 
-// function instructionSequence() {
-//   const currentTime = instructionAudio.currentTime;
-//   if (
-//     currentTime >= instructionTimeStamps[0] &&
-//     currentTime < instructionTimeStamps[1]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[0]}`;
-//   } else if (
-//     currentTime >= instructionTimeStamps[1] &&
-//     currentTime < instructionTimeStamps[2]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[1]}`;
-//   } else if (
-//     currentTime >= instructionTimeStamps[2] &&
-//     currentTime < instructionTimeStamps[3]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[2]}`;
-//   } else if (
-//     currentTime >= instructionTimeStamps[3] &&
-//     currentTime < instructionTimeStamps[4]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[3]}`;
-//   } else if (
-//     currentTime >= instructionTimeStamps[4] &&
-//     currentTime < instructionTimeStamps[5]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[4]}`;
-//   } else if (
-//     currentTime >= instructionTimeStamps[5] &&
-//     currentTime < instructionTimeStamps[6]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[5]}`;
-//   } else if (
-//     currentTime >= instructionTimeStamps[6] &&
-//     currentTime < instructionTimeStamps[7]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[6]}`;
-//   } else if (
-//     currentTime >= instructionTimeStamps[7] &&
-//     currentTime < instructionTimeStamps[8]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[7]}`;
-//   } else if (
-//     currentTime >= instructionTimeStamps[8] &&
-//     currentTime < instructionTimeStamps[9]
-//   ) {
-//     instructionImage.src = `${instructionImgSequence[8]}`;
-//   } else if (currentTime >= instructionTimeStamps[9]) {
-//     instructionImage.src = `${instructionImgSequence[9]}`;
-//   }
-// }
-
 function instructionSequence() {
   const currentTime = instructionAudio.currentTime;
-  console.log('Current Time:', currentTime); // Add this line
   if (
     currentTime >= instructionTimeStamps[0] &&
     currentTime < instructionTimeStamps[1]
   ) {
     instructionImage.src = `${instructionImgSequence[0]}`;
-    console.log('Setting image to:', instructionImgSequence[0]); // Add this line
   } else if (
     currentTime >= instructionTimeStamps[1] &&
     currentTime < instructionTimeStamps[2]
   ) {
     instructionImage.src = `${instructionImgSequence[1]}`;
-    console.log('Setting image to:', instructionImgSequence[1]); // Add this line
   } else if (
     currentTime >= instructionTimeStamps[2] &&
     currentTime < instructionTimeStamps[3]
   ) {
     instructionImage.src = `${instructionImgSequence[2]}`;
-    console.log('Setting image to:', instructionImgSequence[2]); // Add this line
   } else if (
     currentTime >= instructionTimeStamps[3] &&
     currentTime < instructionTimeStamps[4]
   ) {
     instructionImage.src = `${instructionImgSequence[3]}`;
-    console.log('Setting image to:', instructionImgSequence[3]); // Add this line
   } else if (
     currentTime >= instructionTimeStamps[4] &&
     currentTime < instructionTimeStamps[5]
   ) {
     instructionImage.src = `${instructionImgSequence[4]}`;
-    console.log('Setting image to:', instructionImgSequence[4]); // Add this line
   } else if (
     currentTime >= instructionTimeStamps[5] &&
     currentTime < instructionTimeStamps[6]
   ) {
     instructionImage.src = `${instructionImgSequence[5]}`;
-    console.log('Setting image to:', instructionImgSequence[5]); // Add this line
   } else if (
     currentTime >= instructionTimeStamps[6] &&
     currentTime < instructionTimeStamps[7]
   ) {
     instructionImage.src = `${instructionImgSequence[6]}`;
-    console.log('Setting image to:', instructionImgSequence[6]); // Add this line
   } else if (
     currentTime >= instructionTimeStamps[7] &&
     currentTime < instructionTimeStamps[8]
   ) {
     instructionImage.src = `${instructionImgSequence[7]}`;
-    console.log('Setting image to:', instructionImgSequence[7]); // Add this line
   } else if (
     currentTime >= instructionTimeStamps[8] &&
     currentTime < instructionTimeStamps[9]
   ) {
     instructionImage.src = `${instructionImgSequence[8]}`;
-    console.log('Setting image to:', instructionImgSequence[8]); // Add this line
   } else if (currentTime >= instructionTimeStamps[9]) {
     instructionImage.src = `${instructionImgSequence[9]}`;
-    console.log('Setting image to:', instructionImgSequence[9]); // Add this line
   }
 }
 
@@ -404,8 +341,10 @@ function drop(e) {
       if (framesWithMatchingCrests === crestPiecesTotal) {
         let lastCrestFrame = puzzleFrames[2].querySelector('.quest-item-frame');
         if (lastCrestFrame) {
-          lastCrestFrame.style.backgroundImage = `url(${basePath}/assets/img/entranceHall/skeletonKey.jpg')`;
+          const skeletonKeyImagePath = `${basePath}/assets/img/entranceHall/skeletonKey.jpg`;
 
+          lastCrestFrame.style.backgroundImage = `url(${skeletonKeyImagePath})`;
+          ('lastCrestFrame.style.backgroundImage');
           let nextIcon = document.querySelector('.next-icon');
           nextIcon.style.opacity = '1';
           nextIcon.style.pointerEvents = 'all';
