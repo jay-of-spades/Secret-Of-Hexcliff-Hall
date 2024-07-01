@@ -1,4 +1,6 @@
-const prodMode = window.location.href.includes('jay-of-spades.github.io/');
+const prodMode = window.location.href.includes('jay-of-spades.github.io/')
+  ? true
+  : false;
 const basePath = prodMode ? '/Secrets-Of-Hexcliff-Hall' : '';
 
 let crestIMG = [
