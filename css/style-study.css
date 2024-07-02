@@ -138,45 +138,45 @@
 }
 
 .papers1 {
-  width: 90px;
-  height: 30px;
+  width: 70px;
+  height: 15px;
   bottom: 20%;
   left: 14.8%;
 }
 .paper2 {
-  width: 40px;
-  height: 30.5px;
+  width: 30px;
+  height: 22.5px;
   bottom: 23%;
   left: 22.24%;
 }
 .paper3 {
-  width: 60px;
-  height: 15.5px;
+  width: 42.5px;
+  height: 12.5px;
   bottom: 21.5%;
   left: 26.75%;
 }
 .paper4 {
-  width: 60px;
-  height: 20.5px;
+  width: 44px;
+  height: 15.5px;
   bottom: 23.85%;
   left: 30.45%;
 }
 .cup1 {
-  width: 35px;
-  height: 37.5px;
+  width: 25px;
+  height: 29px;
   bottom: 20%;
   left: 21.35%;
 }
 .cup2 {
-  width: 40px;
-  height: 37.5px;
+  width: 32.5px;
+  height: 27.5px;
   bottom: 22%;
   left: 24.35%;
 }
 
 .vase1 {
-  width: 25px;
-  height: 50.5px;
+  width: 20px;
+  height: 38px;
   bottom: 23.85%;
   left: 27.65%;
 }
@@ -197,106 +197,112 @@
 }
 
 .book1 {
-  width: 70px;
-  height: 80px;
+  width: 50px;
+  height: 60px;
   bottom: 24%;
   left: 12.25%;
 }
 .book2 {
-  width: 70px;
-  height: 50px;
+  width: 50px;
+  height: 35px;
   bottom: 34.5%;
   left: 12.25%;
   transform: rotate(7deg);
 }
 .book3 {
-  width: 70px;
-  height: 50px;
+  width: 50px;
+  height: 37px;
   bottom: 41%;
-  left: 11.85%;
+  left: 12.1%;
   transform: rotate(10deg);
+  border-bottom-left-radius: 1.15rem;
 }
 .book4 {
-  width: 60px;
-  height: 45px;
+  width: 47px;
+  height: 36px;
   bottom: 48%;
   left: 12.5%;
   transform: rotate(14deg);
 }
 .book5 {
-  width: 60px;
-  height: 47.5px;
+  width: 52px;
+  height: 37.5px;
   top: 39.35%;
-  left: 12.5%;
+  left: 12%;
   transform: rotate(16deg);
+  border-radius: 10px 30px 2px 2rem;
 }
 .book6 {
-  width: 120px;
-  height: 47.5px;
-  top: 42.35%;
-  left: 17.5%;
+  width: 85px;
+  height: 35px;
+  top: 42.75%;
+  left: 17.75%;
   transform: rotate(12deg);
+  border-radius: 10px 10px 2px 10px;
 }
 .book7 {
-  width: 120px;
-  height: 44.5px;
+  width: 80px;
+  height: 32.5px;
   top: 49.15%;
-  left: 17.5%;
+  left: 18%;
   transform: rotate(10deg);
+  border-radius: 2px 9px 10px 10px;
 }
 .book8 {
-  width: 120px;
-  height: 44.5px;
-  bottom: 39.15%;
-  left: 17.5%;
+  width: 80px;
+  height: 33px;
+  bottom: 39.25%;
+  left: 18%;
   transform: rotate(7deg);
 }
 
 .book9 {
-  width: 120px;
-  height: 40.5px;
-  bottom: 34.15%;
-  left: 17.5%;
+  width: 80px;
+  height: 30.5px;
+  bottom: 34.1%;
+  left: 18%;
   transform: rotate(3deg);
 }
 .book10 {
-  width: 120px;
-  height: 28.5px;
-  bottom: 30.15%;
-  left: 17.5%;
+  width: 82px;
+  height: 20px;
+  bottom: 30%;
+  left: 17.775%;
   transform: rotate(-1deg);
 }
 .book11 {
-  width: 110px;
-  height: 32.5px;
+  width: 80px;
+  height: 27.5px;
   bottom: 25.15%;
   left: 17.75%;
   transform: rotate(-1deg);
+  border-radius: 2px 2px 50% 20px;
 }
 .book12 {
-  width: 95px;
-  height: 35.5px;
+  width: 75px;
+  height: 29px;
   top: 43.15%;
-  right: 19.35%;
+  right: 19.1%;
   transform: rotate(-12deg);
+  border-radius: 10px 2px 10px 2px;
 }
 .book13 {
-  width: 95px;
-  height: 39.5px;
-  top: 49.15%;
-  right: 19.35%;
+  width: 75px;
+  height: 32.5px;
+  top: 48.85%;
+  right: 19%;
   transform: rotate(-9deg);
 }
 .book14 {
-  width: 100px;
-  height: 35.5px;
-  bottom: 40.15%;
-  right: 18.75%;
+  width: 75px;
+  height: 31px;
+  bottom: 40%;
+  right: 19%;
   transform: rotate(-7deg);
 }
 .book15 {
-  width: 100px;
-  height: 35.5px;
+  width: 80px;
+  height: 34px;
   bottom: 33.95%;
   right: 18.75%;
   transform: rotate(-4deg);
@@ -304,83 +310,83 @@
 }
 
 .book16 {
-  width: 55px;
-  height: 50.5px;
+  width: 37.5px;
+  height: 40px;
   bottom: 34.25%;
   right: 13.15%;
   transform: rotate(-4deg);
   border-bottom-left-radius: 17rem;
 }
 .book17 {
-  width: 65px;
-  height: 50px;
+  width: 55px;
+  height: 37.5px;
   bottom: 41%;
   right: 13.15%;
   transform: rotate(-6deg);
 }
 .book18 {
-  width: 62.5px;
-  height: 50px;
+  width: 44.5px;
+  height: 37.5px;
   bottom: 47.75%;
   right: 13.75%;
   transform: rotate(-12deg);
   border-top-left-radius: 2rem;
 }
 .book19 {
-  width: 67.5px;
-  height: 50px;
+  width: 52.5px;
+  height: 37.5px;
   bottom: 54.75%;
   right: 13.15%;
   transform: rotate(-16deg);
-  border-top-left-radius: 2rem;
+  border-radius: 2rem 10px 2rem 10px;
 }
 .magazine-pile1 {
-  width: 70px;
-  height: 70.5px;
+  width: 60px;
+  height: 55.5px;
   bottom: 23.95%;
   right: 20.95%;
   transform: rotate(1deg);
   border-bottom-right-radius: 2rem;
 }
 .magazine-pile2 {
-  width: 60px;
-  height: 26.5px;
-  bottom: 18.95%;
+  width: 45px;
+  height: 19.5px;
+  bottom: 19.5%;
   right: 21.95%;
   transform: rotate(1deg);
   border-bottom-right-radius: 2rem;
 }
 .chair1 {
-  width: 110px;
-  height: 110.5px;
+  width: 82px;
+  height: 85px;
   bottom: 17.15%;
   left: 34.75%;
   transform: rotate(-1deg);
 }
 .chair2 {
-  width: 90px;
-  height: 110.5px;
+  width: 70px;
+  height: 87.5px;
   bottom: 16.75%;
-  right: 35.05%;
+  right: 34.8%;
   border-top-left-radius: 15rem;
-  transform: rotate(-1deg);
+  transform: rotate(5deg);
 }
 .chair3 {
-  width: 55px;
-  height: 31.5px;
+  width: 45px;
+  height: 24px;
   bottom: 14.25%;
   right: 22.5%;
   transform: rotate(7deg);
 }
 .mirror1 {
-  width: 50px;
+  width: 35px;
   height: 80.5px;
   bottom: 32.15%;
-  left: 38.35%;
+  left: 38.45%;
   transform: rotate(-1deg);
 }
 .mirror2 {
-  width: 30px;
+  width: 22.5px;
   height: 65.5px;
   bottom: 34.15%;
   right: 39.7%;
@@ -388,36 +394,36 @@
 }
 
 .buoquet {
-  width: 40px;
-  height: 38.5px;
+  width: 32.5px;
+  height: 27.5px;
   bottom: 24.5%;
   left: 46.35%;
   transform: rotate(-1deg);
 }
 .globe {
-  width: 40px;
-  height: 38.5px;
+  width: 30px;
+  height: 30.5px;
   bottom: 24.5%;
   left: 52%;
   transform: rotate(-1deg);
 }
 .bottle {
-  width: 30px;
-  height: 38.5px;
+  width: 20px;
+  height: 28.5px;
   bottom: 20%;
-  right: 41.75%;
+  right: 41.85%;
   transform: rotate(-1deg);
 }
 .wine-closet {
-  width: 50px;
+  width: 40px;
   height: 38.5px;
   bottom: 25.9%;
   right: 37.75%;
   transform: rotate(-1deg);
 }
 .transistor-radio {
-  width: 40px;
-  height: 43px;
+  width: 30px;
+  height: 39px;
   bottom: 29.25%;
   right: 35.95%;
   transform: rotate(-1deg);
@@ -470,14 +476,16 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 300px;
+  width: 300px;
 }
 
 .puzzle-frame {
   position: relative;
   display: grid;
   place-items: center;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
 }
 
 .puzzle-frame:nth-of-type(1) {
@@ -495,12 +503,12 @@
 }
 
 .frame {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   position: static;
   border: solid 1px var(--accent-color);
   border-radius: 50%;
-  font-size: 75px;
+  font-size: 55px;
   pointer-events: none;
   background: linear-gradient(
     135deg,

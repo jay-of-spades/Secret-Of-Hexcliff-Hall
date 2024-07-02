@@ -15,194 +15,206 @@
 }
 /* quest pots */
 .fire-pot {
-  width: 65px;
-  height: 130px;
+  width: 55px;
+  height: 107px;
   top: 60%;
   right: 14.9%;
 }
 
 .air-pot {
-  width: 95px;
-  height: 130px;
+  width: 75px;
+  height: 100px;
   top: 64%;
   right: 1.75%;
 }
 
 .metal-pot {
-  width: 80px;
+  width: 60px;
   height: 80px;
   bottom: 25%;
-  left: 26.25%;
+  left: 27%;
 }
 .water-pot {
-  width: 80px;
-  height: 160px;
+  width: 60px;
+  height: 110px;
   bottom: 25%;
   left: 12.95%;
 }
 /* other items */
 .bottle1 {
-  width: 25px;
-  height: 52px;
+  width: 15px;
+  height: 32px;
   top: 75%;
-  right: 13.9%;
+  right: 14.2%;
 }
 .bottle2 {
-  width: 25px;
-  height: 60px;
-  top: 73%;
-  right: 11.25%;
+  width: 15px;
+  height: 40px;
+  top: 74%;
+  right: 11.55%;
 }
 
 .pot1 {
-  width: 80px;
-  height: 130px;
+  width: 60px;
+  height: 100px;
   top: 57%;
   right: 4.75%;
 }
 
 .pot-stand {
-  width: 300px;
-  height: 130px;
+  width: 220px;
+  height: 100px;
   bottom: 2%;
   right: 2.75%;
 }
 .plant1 {
-  width: 180px;
-  height: 110px;
+  width: 130px;
+  height: 85px;
   bottom: 1%;
   right: 1.75%;
+  border-top-left-radius: 7rem;
 }
 .plant2 {
-  width: 80px;
-  height: 70px;
+  width: 60px;
+  height: 50px;
   bottom: 0%;
   right: 14.25%;
+  border-radius: 7rem 7rem 0 0;
 }
 .plant3 {
-  width: 150px;
-  height: 70px;
+  width: 120px;
+  height: 52.5px;
   bottom: 0%;
-  right: 20.25%;
+  right: 19.2%;
+  border-radius: 3rem 7rem 0 0;
 }
 .plant4 {
-  width: 130px;
-  height: 160px;
+  width: 100px;
+  height: 120px;
   bottom: 7%;
   right: 25.25%;
 }
 
 .plant5 {
-  width: 90px;
-  height: 130px;
+  width: 70px;
+  height: 100px;
   bottom: 7%;
-  right: 51.25%;
+  right: 50%;
+  border-radius: 7rem;
 }
 .plant6 {
-  width: 80px;
-  height: 100px;
+  width: 60px;
+  height: 70px;
   bottom: 22%;
   right: 48.25%;
+  border-radius: 3rem 0 2.5rem 0;
 }
 .plant7 {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 62px;
   bottom: 17%;
   right: 56.25%;
+  border-radius: 0 0 2.5rem 2.5rem;
 }
 .plant8 {
-  width: 100px;
-  height: 60px;
+  width: 77.5px;
+  height: 47.5px;
   bottom: 20%;
   right: 60.85%;
+  border-radius: 0 0 2.5rem 2.5rem;
 }
 .plant9 {
-  width: 80px;
-  height: 140px;
-  bottom: 5%;
+  width: 60px;
+  height: 70px;
+  bottom: 12%;
   right: 64.85%;
+  border-radius: 2.5rem 7.5rem 7.5rem 2.5rem;
 }
 
 .plant10 {
-  width: 100px;
-  height: 120px;
+  width: 73px;
+  height: 85px;
   bottom: 28%;
   left: 20.25%;
+  border-radius: 10px 10px 2.5rem 2.5rem;
 }
 
 .plant11 {
-  width: 100px;
-  height: 140px;
-  bottom: 28%;
+  width: 70px;
+  height: 100px;
+  bottom: 30%;
   left: 3.95%;
 }
 .plant12 {
-  width: 170px;
-  height: 200px;
+  width: 130px;
+  height: 160px;
   bottom: 2.75%;
   left: 0%;
 }
 .plant13 {
-  width: 170px;
-  height: 80px;
+  width: 120px;
+  height: 70px;
   bottom: 0%;
   left: 10%;
   border-top-right-radius: 7rem;
 }
 .plant14 {
-  width: 100px;
-  height: 130px;
+  width: 70px;
+  height: 98px;
   bottom: 2.5%;
   left: 35%;
+  border-top-right-radius: 2rem;
 }
 .left-drawer {
-  width: 110px;
-  height: 60px;
+  width: 80px;
+  height: 40px;
   bottom: 12%;
   left: 15.5%;
   transform: rotate(-3deg);
 }
 .right-drawer {
-  width: 80px;
-  height: 50px;
+  width: 55px;
+  height: 35px;
   bottom: 13%;
   left: 23.5%;
   transform: rotate(-4deg);
 }
 .lamp {
-  width: 80px;
-  height: 360px;
+  width: 62px;
+  height: 270px;
   bottom: 7%;
   right: 22.25%;
+  border-radius: 10px 10px 50% 50%;
 }
 
 .door-right-column {
-  width: 80px;
-  height: 120px;
+  width: 40px;
+  height: 90px;
   bottom: 7%;
-  right: 31.25%;
+  right: 32.5%;
+  border-radius: 10px 10px 7rem 10px;
 }
 .steps {
-  width: 150px;
-  height: 80px;
+  width: 110px;
+  height: 58px;
   bottom: 7%;
   right: 36.95%;
 }
 .right-door {
-  width: 65px;
-  height: 80px;
+  width: 70px;
+  height: 215px;
   bottom: 17%;
-  right: 36.95%;
+  right: 35.5%;
 }
 .left-door {
   width: 65px;
-  height: 80px;
+  height: 215px;
   bottom: 17%;
   right: 41.95%;
 }
 .door-left-column {
-  width: 60px;
-  height: 120px;
+  width: 40px;
+  height: 88px;
   bottom: 7%;
   right: 47.25%;
 }

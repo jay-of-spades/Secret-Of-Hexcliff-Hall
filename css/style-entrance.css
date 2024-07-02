@@ -7,158 +7,160 @@
 }
 
 .chair {
-  width: 120px;
-  height: 230px;
+  width: 100px;
+  height: 180px;
   top: 69%;
   right: 12.5%;
 }
 .box1 {
-  width: 50px;
-  height: 64px;
+  width: 40px;
+  height: 48px;
   top: 67%;
   right: 0.75%;
 }
 .box2 {
   width: 20px;
-  height: 67px;
+  height: 48px;
   top: 65.75%;
-  right: 4.95%;
+  right: 4.6%;
 }
 
 .books1 {
-  width: 55px;
-  height: 64px;
+  width: 45px;
+  height: 48px;
   top: 67%;
   right: 6%;
 }
 .books2 {
-  width: 65px;
-  height: 50px;
+  width: 49px;
+  height: 45px;
   top: 67.5%;
   left: 5.25%;
 }
 .vase1 {
-  width: 20px;
-  height: 55px;
+  width: 15px;
+  height: 45px;
   top: 66.85%;
   right: 10.075%;
 }
 .vase2 {
-  width: 20px;
-  height: 40px;
+  width: 15px;
+  height: 30px;
   top: 69%;
   right: 11.25%;
 }
 .vase3 {
   width: 20px;
-  height: 35px;
+  height: 28px;
   top: 71.5%;
   right: 25.5%;
 }
 .vase4 {
-  width: 18px;
-  height: 30px;
+  width: 12px;
+  height: 23px;
   top: 72.5%;
   right: 24.5%;
 }
 
 .vase5 {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 23px;
   top: 72.5%;
   left: 25.5%;
 }
 .vase6 {
-  width: 25px;
-  height: 60px;
+  width: 20px;
+  height: 48px;
   bottom: 4%;
   left: 17.25%;
 }
 .vase7 {
-  width: 25px;
-  height: 60px;
-  bottom: 3.75%;
+  width: 20px;
+  height: 47px;
+  bottom: 3.25%;
   left: 15.85%;
 }
 .vase8 {
-  width: 25px;
-  height: 40px;
+  width: 19px;
+  height: 32px;
   bottom: 3%;
   left: 14%;
 }
 
 .vase9 {
-  width: 45px;
-  height: 50px;
+  width: 35px;
+  height: 38px;
   top: 67.5%;
   left: 10.5%;
 }
 .vase10 {
-  width: 35px;
-  height: 85px;
+  width: 25px;
+  height: 65px;
   top: 66%;
   left: 1.85%;
 }
 .vase11 {
-  width: 23px;
-  height: 85px;
+  width: 16px;
+  height: 65px;
   top: 66%;
   left: 0;
 }
 .table1 {
-  width: 110px;
-  height: 130px;
+  width: 78px;
+  height: 100px;
   top: 75.5%;
   left: 22%;
 }
 .table2 {
-  width: 130px;
-  height: 200px;
+  width: 90px;
+  height: 150px;
   top: 73.5%;
   left: 5.95%;
 }
 .table3 {
-  width: 90px;
-  height: 185px;
-  top: 76.5%;
+  width: 67.5px;
+  height: 135px;
+  top: 76%;
   left: 0%;
 }
 .painting {
-  width: 90px;
-  height: 120px;
-  top: 61.5%;
+  width: 67.5px;
+  height: 81px;
+  top: 62%;
   right: 18.5%;
+  transform: rotate(-3deg);
+  border-bottom-right-radius: 50%;
 }
 .clock {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 37px;
   top: 51.85%;
   right: 19.35%;
 }
 
 .candle1 {
-  width: 15px;
-  height: 25px;
-  top: 73%;
-  right: 23.1%;
+  width: 14px;
+  height: 15px;
+  top: 73.5%;
+  right: 23%;
 }
 .candle2 {
-  width: 15px;
-  height: 20px;
+  width: 14px;
+  height: 15px;
   top: 73.75%;
-  right: 20.65%;
+  right: 20.5%;
 }
 .candle3 {
-  width: 60px;
-  height: 170px;
+  width: 40px;
+  height: 130px;
   top: 40%;
-  right: 14.75%;
+  right: 15%;
 }
 
 .candle4 {
-  width: 52px;
-  height: 220px;
-  top: 44.5%;
+  width: 38px;
+  height: 165px;
+  top: 44.7%;
   left: 16%;
 }
 .frame {
