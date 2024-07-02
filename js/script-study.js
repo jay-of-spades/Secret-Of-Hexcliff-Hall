@@ -1,5 +1,5 @@
 const prodMode = window.location.href.includes('jay-of-spades.github.io/');
-const basePath = prodMode ? '/Secrets-Of-Hexcliff-Hall' : '';
+const basePath = prodMode ? '/Secret-Of-Hexcliff-Hall' : '';
 
 let instructionImgSequence = [
   [
