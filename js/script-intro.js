@@ -121,10 +121,20 @@ document.addEventListener('DOMContentLoaded', function () {
     source.start(0, resumeTime);
     isPlaying = true;
     playButton.src = 'assets/img/icons/pause.png';
+    hexcliffLogo.style.opacity = '0';
+    btnHex.style.opacity = '0';
+    btnHex.style.pointerEvents = 'none';
+    btnHex.style.cursor = 'default';
+    btnHex.style.zIndex = '-1';
 
     source.onended = function () {
       isPlaying = false;
       playButton.src = 'assets/img/icons/play.png';
+      hexcliffLogo.style.opacity = '1';
+      btnHex.style.opacity = '1';
+      btnHex.style.pointerEvents = 'all';
+      btnHex.style.cursor = 'pointer';
+      btnHex.style.zIndex = '1000';
       resumeTime = 0; // Reset resume time when playback ends
     };
   }
